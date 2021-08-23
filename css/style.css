@@ -225,6 +225,7 @@ h1.zero::before{
     background: var(--background-color);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
+    margin-top:-10%;
 }
 
 
@@ -467,7 +468,7 @@ section {
 .footer {
     color: var(--grey);
     font-weight: 400;
-    height: 70vh;
+    height: 60vh;
 }
 
 .footer h1 {
