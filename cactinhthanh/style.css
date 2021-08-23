@@ -57,6 +57,7 @@ p {
 }
 #noidung p{
     font-size: 16px;
+    color: var(--chu);
 }
 #noidung h2{
     font-size: 20px;
