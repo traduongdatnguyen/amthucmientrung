@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 7 đặc sản Thanh Hóa ngon nức tiếng không thể bỏ lỡ</h1>
+                </center>
+                <i><span>Để chuyến đi Thanh Hóa của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực xứ
+                        Thanh chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Thanh Hóa? Hãy theo chân MT.VN khám phá 7 đặc sản Thanh Hóa nổi tiếng
+                        ngon mê ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Nem chua Thanh Hóa</h2>
+                <p>Nem chua là một món ăn khá quen thuộc với người dân Việt Nam. Không chỉ có thế, nó còn là món nhậu
+                    khoái khẩu của nhiều người. Và địa chỉ làm nên tên tuổi của món nem nổi tiếng này chính là Thanh
+                    Hóa.</p>
+                <img src="./ThanhHoa/NemchuaTH.jpg" alt="">
+                <p>Nem chua Thanh Hóa có nhiều loại, thông thường người ta sẽ dựa vào hình dáng và các làm để chia làm
+                    nem dài, nem vuông, nem cối hay nem thính… Nguyên liệu chính để làm nên món ăn dân dã này là thịt
+                    lợn mông nạc, lá đinh lăng, lá ổi, thính và các loại gia vị như tỏi, ớt… </p>
+                <p>Món nem được chế biến đơn giản, gói chắc tay. Hương vị nem giòn ngon hấp dẫn, khi ăn có vị chua vừa
+                    miệng cùng hương vị thơm ngon của tỏi, lá ổi, đinh lăng… Chúng sẽ tạo nên một điểm nhấn độc đáo
+                    trong vị giác khiến bạn phải say mê và ăn mãi không muốn ngừng.</p>
+                <b><i>Địa chỉ bán nem Thanh Hóa ngon:</i></b>
+                <ul>
+                    <li>Nem chua Lợi Lâm: Số 105 đường Lê Thánh Tông, Đông Vệ, Thanh Hóa</li>
+                    <li>Nem chua Thắng Tuyến: Số 409 Lê Hoàn, phường Ba Đình, Thanh Hóa</li>
+                    <li>Nem chua Cương Dũng: 15 Tân An, phường Ngọc Trạo, Thanh Hóa</li>
+                </ul>
+                <h2 id="title2">2. Bánh gai Tứ Trụ</h2>
+                <p>Vùng đất làng Mía Thanh Hóa đã tạo ra một thức quà quê mang hương vị đặc trưng hấp dẫn: bánh gai Tứ
+                    Trụ.</p>
+                <img src="./ThanhHoa/BanhGai.jpg" alt="">
+                <p>Đặc sản Thanh Hóa bánh gai Tứ Trụ ngon phải lựa chọn nguyên liệu hoàn hảo. Hạt nếp cái hoa vàng được
+                    xay mịn để làm bột bánh. Đậu xanh bỏ vỏ, đồ kỹ cho tơi ra mới đem đi xay nhuyễn. Một chiếc bánh có
+                    ngon hay không phụ thuộc khá nhiều vào lá gai. Ở làng Mía, người ta sẽ lựa chọn những chiếc lá không
+                    quá già, cũng không quá ngon để giã lấy nước trộn vào bột bánh. Phần còn lại để sử dụng gói bánh.
+                </p>
+                <p>Bánh gai dẻo dẻo, cắn miếng đầu đã đến phần nhân ngập miệng. Vị lá gai thoang thoảng tạo nên hương vị
+                    rất riêng của món ăn. Nếu có dịp đến Thanh Hóa, hãy ghé làng Mía và nếm thử bánh gai Tứ Trụ này nhé.
+                </p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> Làng Mía, xã Thọ Diên, Thọ Xuân, Thanh Hóa</li>
+                </ul>
+                <h2 id="title3">3. Bánh răng bừa</h2>
+                <p>Bánh răng bừa có quanh năm và bạn có thể ăn vào mùa nào cũng được. Nhưng chúng được yêu thích nhất
+                    vào những ngày đông. Khi bánh vừa hấp xong, còn nóng hổi, vị bùi thơm, lạ miệng của bánh sẽ dễ khiến
+                    người ta say mê.</p>
+                <img src="./ThanhHoa/BanhRangBua.jpg" alt="">
+                <p>Bánh được gọi là răng bừa bởi hình dạng thuôn dài và gần giống với chiếc răng bừa trong nông nghiệp.
+                    Bánh được làm từ bột tẻ và lá dong. Bên trong là phần nhân thịt, mộc nhĩ đậm vị. </p>
+                <p>Bánh răng bừa ngon nhất khi ăn nóng, người dân địa phương thường chấm bánh với nước mắm mặn, thêm
+                    chút tiêu. Miếng bánh dẻo dẻo, nhân bên trong thơm lừng cùng chút nước mắm đậm đà. Chúng sẽ khiến
+                    bạn thích mê cho mà xem.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> Làng Ngọc Đô, Yên Ninh, Yên Định, Thanh Hóa</li>
+                    <li> Chợ hoặc các khu du lịch ở Thanh Hóa</li>
+                </ul>
+                <h2 id="title4">4. Bánh ích</h2>
+                <p>Bánh ích là sự kết hợp của bánh ít và bánh nếp. Do đó, khi ăn món đặc sản Thanh Hóa này, bạn sẽ có
+                    cảm giác vừa quen, vừa lạ đấy.</p>
+                <img src="./ThanhHoa/BanhIt.jpg" alt="">
+                <p>Bánh ích có hình tròn, vỏ ngoài được làm bằng bột nếp. Những loại nếp thượng hạng được xay thành bột
+                    mịn rồi cho nước vào nhào nhuyễn. Nhân bánh bao gồm tôm, thịt băm nhỏ cùng chút gia vị đặc trưng rồi
+                    mang đi hấp. Những chiếc bánh ích mới hấp xong, khi khói còn bay nghi ngút. Chiếc nào chiếc nấy
+                    trắng ngần, núc na núc ních vô cùng thích mắt.</p>
+                <p>Khi ăn bánh ích, bạn hãy rưới lên bánh một lớp mỡ hành phi thơm thơm béo ngậy. Sau đó ăn kèm với chút
+                    rau sống, dưa leo nữa là ngon hết sẩy. </p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> Chợ Tây Thành, Thanh Hóa</li>
+                    <li> Quán cô Mai – Chợ Tân An, Tân Bình, Lê Vãn, Thanh Hóa.</li>
+                </ul>
+
+                <h2 id="title5">5. Chả Tôm</h2>
+                <p>Món ăn đặc sản Thanh Hóa được du khách nhắc đến nhiều khi ghé thăm đó là chả Tôm. Cách làm chả tôm
+                    Thanh Hóa không quá phức tạp. Nhưng nguyên liệu tôm nhất thiết phải là những con chắc thịt, tươi
+                    ngon để giữ đúng hương vị tươi ngon của món ăn.</p>
+                <img src="./ThanhHoa/ChaTom.jpg" alt="">
+                <p>Miếng chả tôm thơm lừng, nóng giòn. Vị tôm bùi bùi, lạ miệng hòa quyện cùng nước chấm chua cay, ăn
+                    thêm chút rau sống nữa thì quá tuyệt. Đảm bảo thưởng thức món ăn này một lần, bạn sẽ nhớ mãi.</p>
+                <p>Đây sẽ là món ăn dân dã tại Thanh Hóa mà bạn không nên bỏ lỡ, nhất là vào ngày Đông nhé.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> 17B Lê Hữu Lập, P.Lam Sơn, Tp. Thanh Hóa</li>
+                    <li> số 9 Lê Thị Hoa, P.Lam Sơn, Tp. Thanh Hóa</li>
+                </ul>
+                <h2 id="title6">6. Mắm Cáy</h2>
+                <p>Nếu bạn đang tìm đặc sản Thanh Hóa để làm quà nhưng ngại vận chuyển đồ tươi sống, mắm cáy sẽ là sự
+                    lựa chọn lý tưởng nhất.</p>
+                <img src="./ThanhHoa/MamCay.jpg" alt="">
+                <p>Mắm cáy được làm từ con vật cùng tên, con cáy. Chúng tương tự như con cua nhưng nhỏ hơn. Cáy sau khi
+                    bắt về được sơ chế sạch sẽ, tách yếm ra rồi đem đi giã nhuyễn. Sau đó, người ta sẽ cho muối vào trộn
+                    đều, bỏ vào chum đậy kín lại. Tiếp tục để chum trong mát khoảng 10 ngày rồi đem phơi nắng thêm 1
+                    tuần. Cuối cùng, họ sẽ cho thính gạo hòa với men gạo vào chum để khử bớt mùi cáy và tạo ra hương vị
+                    ngon đặc trưng.</p>
+                <p>Mắm cáy sau khi hoàn thiện, dùng để chấm thịt luộc hay rau luộc thì đúng là ngon không thể tả.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> Mắm tép Ba Làng – Ba làng, Tĩnh Gia, Thanh Hóa</li>
+                    <li> Khu du lịch biển Sầm Sơn</li>
+                </ul>
+
+                <h2 id="title7">7. Cá Rô Đầm Sét</h2>
+                <p>Nhắc tới đặc sản Thanh Hóa, chúng ta không thể không nhắc đến Cá rô Đầm Sét. Cá rô ở đây chỉ nhỏ bằng
+                    2 ngón tay, có màu phớt vàng và thịt săn chắc, thơm ngon. Chúng được sử dụng để chế biến thành nhiều
+                    món ăn hấp dẫn. Trong đó, rán và nấu canh là hai cách chế biến phổ biến nhất, được yêu thích nhất.
+                </p>
+                <img src="./ThanhHoa/CaRoDamSet.jpg" alt="">
+                <p>Những con cá rô được rán giòn tan, đem chấm với nước mắm ngon hoặc tương bần thêm chanh, gừng, ớt…
+                    Chắc chắn khi thưởng thức món ngon này một lần, bạn sẽ muốn quay lại thưởng thức thêm lần 2 cho mà
+                    xem.</p>
+
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> Nhà hàng Dạ Lan: Số 1 đường Phan Chu Trinh, Thành phố Thanh Hóa</li>
+                    <li> Nhà hàng Cô Tám: Khu di tích Lam Kinh, Thọ Xuân, Thanh Hóa</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

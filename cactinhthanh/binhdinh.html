@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+                <div class="logo">
+                    ẨM THỰC MIỀN TRUNG
+                </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="ndchinh">
+            <h3 style="margin-left: 22px;">Nội dung chính</h3>
+            <ol type="1">
+                <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                <li><a href="#title2">Bánh ít lá gai </a></li>
+                <li><a href="#title3">Mực ngào Bình Định</a></li>
+                <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                <li><a href="#title5">Tré Bình Định</a></li>
+                <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                <li><a href="#title7">Nem chợ huyện</a></li>
+                <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                <li><a href="#title9">Gỏi cá chích</a></li>
+            </ol>
+        </div>
+
+        <div class="cactinhthanh">
+            <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+            <div>
+                <h3>Bắc Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Nam Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Tây Nguyên</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                </ol>
+            </div>
+        </div>
+    </div> -->
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Du Lịch Tự Túc Thêm Hứng Khởi Với 9 Món Ăn Bình Định Ngon Tuyệt Hảo.</h1>
+                </center>
+                <i><span>Để chuyến đi Bình Định của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi
+                        đây chính
+                        là
+                        một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Bình ĐỊnh? Hãy theo chân MT.VN khám phá 9 đặc sản Bình ĐỊnh nổi tiếng
+                        ngon mê ly qua
+                        bài viết này nhé!</span></i>
+                <h3 id="title1">1. Mắm Nhum Mỹ An</h3>
+                <p>Đây là một loại đặc sản Bình Định có một không hai của Bình Đinh. Mắm Nhum được làm từ một loại quả
+                    chỉ có
+                    vùng
+                    núi Mỹ An Bình Định. Nhum có nhiều loại và có thể chế biến nhum để ăn kèm cùng ác món nướng, chiên
+                    nhưng loại
+                    nhum dùng để làm mắm thường có màu đen. Mắm nhum dễ chế biến tuy nhiên 100kg nhum chỉ chế biến được
+                    2kg nhum.
+                    Cũng chính vì thế mà dù cho có tiền cũng khó có thể mua được món đặc sản hiếm có này. Mắm nhum rất
+                    thơm, ngát
+                    ngát đậm chất mùi quả rừng. Mắm Nhum dùng để chấm kèm với các loại thịt luộc, rau sống thì ngon
+                    tuyệt cú mèo.
+                </p>
+                <img src="./binhdinh/mam-nhum-my-an-dac-san-binh-dinh-vntrip-e1501651339517.jpg Nhum Mỹ An-Quang-Ngai-2.jpg"
+                    alt="">
+
+                <h3 id="title2">2. Bánh ít lá gai </h3>
+                <p>Bánh ít lá gai là một trong những món đặc sản Bình Định thơm ngon làm nên danh tiếng cho món ngon
+                    Bình Định.
+                    Đây là một loại món ăn được chế biến rất cầu kì và tỉ mỉ. Lá để làm bánh là loại lá gai, sau khi
+                    được tuyển
+                    chọn
+                    những lá to dầy không bị sâu sẽ được đem phơi khô, nấu nhừ với mật mía, sau khi nước nấu đặc và
+                    nhuyễn thì cho
+                    bột nếp vào khuấy đều. Tiếp đến mang đi giã hoặc xay cho nhỏ để bột gạo, lá gai và mật được hòa
+                    quyện vào với
+                    nhau.</p>
+                <img src="./binhdinh/banh-it-la-gai-binh-dinh-768x508.jpg" alt="">
+
+                <h3 id="title3">3. Mực ngào Bình Định</h3>
+                <p>Một trong những món ăn phải kể đến đầu tiên trong dah sách những món đặc sản Bình Định đó chính là
+                    mực ngào.
+                    Mực ngào có một hương vị thơm ngon rất riêng thu hút khách du lịch. Để chế biến được món mực ngào
+                    người đầu
+                    bếp
+                    đã phải rất công phu, tài tình tỉ mỉ chăm chút cho món ăn. Mực sau khi đươc thu mua từ những cảng
+                    hải sản tươi
+                    ngon được đem về sơ chế và chế biến luôn để giữ được độ tươi ngon nguyên vẹn của mực.</p>
+                <img src="./binhdinh/muc-ngao-ot-dac-san-binh-dinh-lam-qua.jpg" alt="">
+                <p>Mực được ướp cùng tiêu, tỏi, ớt, mắm và một số loại gia vị khác để tạo độ thơm ngon đặc trưng của
+                    mực. Món ăn
+                    này có vị cay đặc trưng, thơm thơm của các loại gia vị sẽ làm bạn thích thú và muốn ăn ngay từ cái
+                    nhìn đầu
+                    tiên. Gía của một cân mực ngào giao động từ 200.000 – 400.000 đồng.</p>
+
+                <h3 id="title4">4. Rượu bầu đá Bình Định</h3>
+                <p>Không giống như các loại rượu gạo thông thường mà chúng ta vẫn biết đến, rượu bầu đá đặc sản Bình
+                    Định được
+                    nấu
+                    từ gạo lứt và chỉ đạt độ ngon nhất khi sử dụng nguồn nước tại một làng của tỉnh Bình Định.</p>
+                <img src="./binhdinh/ruou-bau-da-binh-dinh-768x576.jpg" alt="">
+                <p>Tương truyền vào thời xưa, loại thức uống này còn được tiến cung cho vua hằng năm nên được xếp hạng
+                    vào loại
+                    rượu đặc sản nổi tiếng của cả vùng.</p>
+                <p>Làng Cù Lâm (hay còn gọi là làng nghề rượu Bầu Đá), huyện An Nhơn, tỉnh Bình Định là làng nấu rượu
+                    thủ công
+                    từ
+                    bao đời nay nên vẫn còn giữ được nét đặc trưng nhất của rượu. Rượu Bầu Đá được đựng trong những
+                    chiếc bình sứ
+                    tinh xảo và có độ cồn rất cao, lên đến 50 độ nên người uống không quen sẽ thấy rất nóng và dễ say.
+                    Thế nhưng,
+                    điểm đặc biệt khiến người ta yêu thích những vò rượu này chính là cái vị thanh mát đến lạnh người,
+                    chỉ cần
+                    uống
+                    một ngụm là cả người sẽ thấy khoan khoái, mát lạnh và dễ chịu hơn hẳn. Bạn có thể tìm mua món đặc
+                    sản Quy Nhơn
+                    Bình Định này tại làng nghề nói trên hoặc các cửa hàng đặc sản phân bố khắp tỉnh.</p>
+
+                <h3 id="title5">5. Tré Bình Định</h3>
+                <p>Tré – Cái tên độc và lạ của một món ăn ở Bình Định. Cũng chính bởi cái tên này mà nó đã thu hút nhiều
+                    thực
+                    khách tìm hiểu và thưởng thức món ăn. Món đặc sản Bình Định này thực ra đã có mặt ở hầu hết các tỉnh
+                    thành
+                    Trung
+                    Trung bộ thế nhưng nổi tiếng thơm ngon nhất vẫn là Tré Bình Định, nó mang một hương rất riêng mà chỉ
+                    những con
+                    người ở Bình Định mới làm nên được. Tré là một loại món ăn gần giống với các loại nem bì miền bắc
+                    nhưng lại
+                    được
+                    thay thế bằng nhiều loại nguyên liệu khác nhau như: tai heo, lỗ mũi heo, da heo hoặc có thể là thịt
+                    ba chỉ.
+                </p>
+                <img src="./binhdinh/tre-binh-dinh.jpg" alt="">
+                <p>Các loại nguyên liệu sau khi được thái nhỏ thành các lát thì sẽ được đem đi ướp cùng các loại gia vị
+                    như
+                    tiêu,
+                    tỏi, ớt, nước mắm và thính (bột giã nhỏ từ gạo rang). Chờ cho gia vị hòa quyện vào thịt thì mang đi
+                    gói. Tré
+                    sẽ
+                    được gói bằng lá khế hoặc lá ổi non, lớp ngoài cùng là lá chuối. Gói sau đem đi bảo quản trong
+                    khoảng 2 đến 3
+                    ngày là có thể thưởng thức.</p>
+
+                <h3 id="title6">6. Cua Huỳnh Đế</h3>
+                <img src="./binhdinh/cua-huynh-de-vntrip-e1536313616403.jpg" alt="">
+                <p>Món món hải sản ngon nức tiếng ở Bình Định. Cua Huỳnh đếđược xem là vua của các loại cua bởi nó có
+                    mai đỏ
+                    vàng
+                    như một bộ long bào uy nghi của các nhà vua, hai bên có gai li ti sắc nhọn, hai chiếc càng to chắc
+                    khỏe. Cua
+                    thường sống trong những ngách đá trên biển Bình Định. Cua Huỳnh Đế có thịt thơm, chắc và có thể chế
+                    biến thành
+                    nhiều món ăn ngon khác nhau như cua nướng, cua hấp… đều rất thơm ngon.</p>
+
+                <h3 id="title7">7. Nem chợ huyện</h3>
+                <img src="./binhdinh/nem-cho-huyen-binh-dinh.jpg" alt="">
+                <p>Nói đến nem chua bạn sẽ nhớ ngay đến quê hương Thanh Hóa tuy nhiên nem chua đặc sản Quy Nhơn Bình
+                    Định mang
+                    một
+                    hương vị thơm ngon nổi tiếng không kém nem chua Thanh Hóa. Nem được chế biến một cách cầu kì công
+                    phu. Thịt
+                    sau
+                    khi được lựa chọn những miếng tươi ngon nhất được mua mang về chế biến. Thịt heo được sắt thành
+                    những miếng
+                    dài
+                    mỏng, ướp đều gia vị với tiêu, tỏi, ớt tươi, nước mắn, muối và quan trọng đó là bột thính ( bột được
+                    làm từ
+                    gạo
+                    rang giã nhỏ) để 15 phút cho gia vị ngấm đều vào những miếng thịt rồi đem ra gói. Nem chợ huyện ở
+                    Bình Định
+                    được
+                    bọc một lớp lá khế non sau đó quấn quanh là lá chuối. Nem được gói vuông như một chiếc bánh trưng
+                    nhỏ. sau khi
+                    gói để để ở một nơi thoáng mát, chỉ vài ngày sau là có thể ăn được.</p>
+
+                <h3 id="title8">8. Gié bò Tây Sơn</h3>
+                <img src="./binhdinh/Gie-bo-tay-son-du-lich-binh-dinh.jpg" alt="">
+                <p>Đây là một món ăn khá lạ và độc đáo của Bình Định. Với một vài người đây không phải là một món dễ ăn.
+                    Gié bò
+                    là
+                    một món ăn được chế khá cầu kì công phu. Sau khi mổ bò người ta sẽ lấy phần ruột non nhất của bò để
+                    làm gié.
+                    trong phần đoạn ruột non nhất của bò có một chất dịch nhầy màu xanh lá cây. Chất nhầy xanh ấy được
+                    gọi là gié.
+                    Gie bò sau khi được lấy ra phải được chế biến luôn để lâu sẽ bị hôi và không dùng được nữa. Gié được
+                    đem đi
+                    ướp
+                    gia vị cùng tiêu, tỏi, ớt, xả, gừng …để ngấm vị. Phần ruột non, tiết và gan bò được sắt thành những
+                    miếng
+                    vuông
+                    vức nấu chung với nồi gié bò. Khi ăn bạn sẽ nhìn thấy màu của gié bò xanh ngát trong bát. Thơm ngon
+                    đậm đà.
+                    nếu
+                    là người lần đầu ăn bạn sẽ thấy không quen miệng. Tuy nhiên món này là món càng ăn càng nghiền. Ăn
+                    kèm với
+                    bánh
+                    đa và rau sống thì không còn gì tuyệt vời hơn.</p>
+
+                <h3 id="title9">9.Gỏi cá chích</h3>
+                <img src="./binhdinh/goi-ca-chinh-binh-dinh-768x576.jpg" alt="">
+                <p>Cá Chích là loại cá nước ngọt sống ở các sông hồ ao suối. Cũng bởi Bình Định có nhiều sông hồ nên đây
+                    là môi
+                    trường thuận lợi để loài đặc sản này sinh sống. Cá Chích đặc sản Bình Định có thân hình nhỏ, dài. Cá
+                    Chích sau
+                    khi được đánh bắt lên sẽ được làm sạch và chiên giòn. Vì là loài cá có kích cỡ nhỏ nên khi ăn người
+                    ta sẽ kẹp
+                    cả
+                    con cá đã được chiên vàng ăn với bánh phở cuốn, kèm rau thơm, dưa chuột. Cá ngọt thịt nên bạn ăn sẽ
+                    không bị
+                    chán. Tuy Nhiên nếu bạn là tín đồ gỏi sống bạn có thể được thưởng thức gỏi cá chích với những thớ
+                    thịt đc lọc
+                    xương làm sạch.</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

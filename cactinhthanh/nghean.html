@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 12 đặc sản Nghệ An ngon nức tiếng không thể bỏ lỡ.</h1>
+                </center>
+                <i><span>Để chuyến đi Nghệ An của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực xứ Nghệ
+                        chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Nghệ An? Hãy theo chân MT.VN khám phá 12 đặc sản Nghệ An nổi tiếng ngon
+                        mê ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Cháo lươn Vinh đặc sản Nghệ An </h2>
+                <p>Khi đặt chân đến các địa điểm du lịch Nghệ An, bạn sẽ không khỏi quên cho dạ dày mình được nạp năng
+                    lượng cho chuyến hành trình. Nhắc đến các món ăn ngon Nghệ An, thì không thể không kể đến món ăn trứ
+                    danh xứ Nghệ “cháo lươn Vinh”..</p>
+                <img src="./NgheAn/ChaoLuon.jpg" alt="">
+                <p>Cháo lươn Nghệ An có một hương vị đặc biệt so với các loại cháo khác, từ việc lựa chọn nguyên liệu
+                    lươn sạch, béo, vàng óng qua bàn tay khéo léo của người nấu tạo nên một món ăn thanh mát và “thu
+                    hút” thực khách thưởng thức.
+                    Chất lượng của món cháo lươn sẽ phải đảm bảo, miếng thịt lươn vừa mềm, vừa ngọt mà vẫn giữ được độ
+                    dai vừa phải hơn nữa cháo ninh không quá nhão cộng thêm nước làm lươn tạo ra một bát cháo thực sự
+                    đặc biệt và hấp dẫn.
+                </p>
+
+                <b><i>Các địa điểm thưởng thức món cháo lươn Vinh:</i></b>
+                <ul>
+                    <li>Quán Bà Liễu: 87 Mai Hắc Đế – Quán Bàu – Tp Vinh</li>
+                    <li>Quán cháo lươn bà Lan: số 2 Trần Hưng Đạo – Tp Vinh</li>
+                    <li>Quán cháo lươn đồng Hưng Chính</li>
+                    <li>Quán cháo lươn Hồng Quang: 38 Ngô Sĩ Liên – Tp Vinh</li>
+                </ul>
+                <h2 id="title2">2. Mực nháy nướng Cửa Lò – đặc sản Nghệ An </h2>
+                <p>Vùng đất làng Mía Thanh Hóa đã tạo ra một thức quà quê mang hương vị đặc trưng hấp dẫn: bánh gai Tứ
+                    Trụ.</p>
+                <img src="./NgheAn/Muc.jpg" alt="">
+                <p>Là nơi du lịch biển, cho nên Cửa Lò cũng có khá nhiều món ăn hải sản ngon hấp dẫn, phải kể đến là mực
+                    nháy nướng Cửa Lò. Những con mực được ngư dân đánh bắt từ sáng sớm, khá là tươi ngon và sạch sẽ,
+                    được mang về chế biến, thưởng thức. Mực tươi được nướng lên vừa thơm vừa giòn vừa ngọt, khi ăn thêm
+                    một chút tương ớt hoặc muối tiêu chanh thì rất ngon. </p>
+                <p>Chính món ăn hấp dẫn này, mà ngành du lịch tại đây có thêm dịch vụ câu mực nháy bằng thuyền thúng ở
+                    Cửa Lò. Gía câu mực dao động 100.000 – 150.000đ/tiếng.</p>
+
+                <h2 id="title3">3. Tương Nam Đàn đặc sản Nghệ An </h2>
+                <p>Tương Nam Đàn đặc sản nổi tiếng Nghệ An, với nguyên liệu được làm hoàn toàn từ thiên nhiên như: đậu
+                    nành, nếp, muối không Iốt và nước. Yêu cầu rất khắt khe đối với hạt đậu nành phải hạt đều, chắc mẩy,
+                    khi được rang chín sẽ để nguội, sau đó say vỡ đôi, vỡ ba chứ không được xay nát, sảy bỏ vỏ, cho vào
+                    nồi nấu hơn 24h rồi cho vào chum ủ.</p>
+                <img src="./NgheAn/Tuong.jpg" alt="">
+                <p>Lưu ý, trong quá trình ngâm ủ, hàng ngày phải đánh tương thường xuyên.</p>
+                <p>Chất lượng của tương khi đạt tiêu chuẩn tương ngon, tương ngọt: là tương được nắng, làm bằng mốc nếp
+                    thơm, nhiều đỗ. Màu của tương không có màu nâu như tương bần, mà có màu vàng óng sánh như mật ong.
+                </p>
+
+                <h2 id="title4">4. Nhút Thanh Chương đặc sản Nghệ An </h2>
+                <p>Có câu “Nhút Thanh Chương – Tương Nam Đàn” để chỉ địa danh đó có đặc sản gì? Đến Nghệ An nếu không
+                    thưởng thức món đặc sản Nghệ An dân dã này, thì thật đáng tiếc. </p>
+                <img src="./NgheAn/Nhut.jpg" alt="">
+                <p>Nhút là cách gọi quen thuộc của người miền Trung, là quả mít muối mặn ăn với cơm.</p>
+                <p>Món Nhút ngon, có vị “đặc biệt” với các yếu tố: nó ăn phải giòn giòn, mặn của muối, cay xè của ớt, và
+                    dậy mùi thơm của mít, thanh ngọt của mía đường.</p>
+
+                <h2 id="title5">5. Bánh Mướt đặc sản Nghệ An </h2>
+                <p>Cũng gần giống như loại bánh cuốn ngoài Bắc, bánh ướt miền Nam, thứ bánh đặc sản Nghệ An này cũng
+                    mang một “hương vị” đặc biệt không thể lẫn vào đâu.</p>
+                <img src="./NgheAn/BanhUot.jpg" alt="">
+                <p>Nguyên liệu chính cho món bánh Mướt này là gạo tẻ đem xay nhuyễn thành bột, ngâm trước khi đem lên
+                    tráng để cho bánh được nở phồng và ngon, mềm hơn. Khi thưởng thức bánh có thể ăn kèm thịt nướng, chả
+                    lụa, nước chấm bánh điệu nghệ “riêng” của người xứ Nghệ.</p>
+
+                <h2 id="title6">6. Cháo Canh đặc sản Nghệ An </h2>
+                <img src="./NgheAn/ChaoCanh.jpg" alt="">
+                <p>Cháo Canh Nghệ An cái tên thật là lạ nếu cho vị khách nào lần đầu biết đến, hẳn sẽ nghĩ là món cháo
+                    và kết hợp với canh. Nhưng không phải vậy? Cháo Canh là món ăn dân dã, nhưng cũng giống các món đặc
+                    sản Nghệ An khá nổi tiếng. Được làm từ bột mỳ, sau khi nhào thật nhuyễn sẽ cán thành bột và cắt
+                    thành những sợi nhỏ tròn được kết hợp với nước hầm xương ngon.</p>
+
+                <h2 id="title7">7. Bánh Ngào đặc sản Nghệ An </h2>
+                <img src="./NgheAn/BanhDaDuc.jpg" alt="">
+                <p>Bánh Ngào Nghệ An là món ăn đơn giản được phủ nhiều mật lại có thêm mùi thơm của gừng, nếu được
+                    thưởng thức vào lúc trời mưa phùn hay se se lạnh ăn nóng sẽ rất ngon.
+                    Thưởng thức món Bánh Ngào chuẩn vị với vị bùi của nhân, thơm dẻo của nếp quyện với vị ngọt vừa đậm
+                    vừa thanh vừa thơm nồng của gừng, của mật đem đến cho người ăn vị ngọt thơm rất ngon miệng.
+                </p>
+                <h2 id="title8">8. Bánh đa xúc hến đặc sản Nghệ An</h2>
+                <img src="./NgheAn/BanhDaDuc.jpg" alt="">
+                <p>Bánh đa xúc hến là một món ăn quá đỗi quen thuộc của người dân xứ Nghệ. Dân giã nhưng đậm đà y như
+                    tình người của những người dân miền Trung vậy. Hến lấy được từ sông Lam, sau khi tách vỏ, xào cùng
+                    hạnh mỡ béo ngậy và thơm lừng. Kết hợp cùng với hến là những chiếc bánh đa Đô Lương giòn tan được
+                    dùng thay thìa, một sự kết hợp quá hoàn hảo làm nên món đặc sản Nghệ An đầy quyến rũ. Gia vị để ăn
+                    cùng bánh đa là lạc rang giã nhỏ, rau sống và ớt để thêm kích thích vị giác.
+                </p>
+                <h2 id="title9">9. Ốc xào đặc sản Nghệ An</h2>
+                <img src="./NgheAn/OcXao.jpg" alt="">
+                <p>Chẳng biết từ bao giờ, ốc xào phổ biến và trở nên món ăn không thể bỏ lỡ ở xứ Nghệ. Ốc xào Nghệ An
+                    không để nguyên con như ốc xào me Hà Nội mà đã được tỉ mỉ chặt đít rửa sạch để gia vị thấm vào từng
+                    con ốc. Tất cả gia vị từ sả, ớt, lá chanh được xào lên cùng hành tóp mỡ dậy mùi thơm phức. Ốc xào
+                    được ăn với bánh đa và dưa leo, cùng ít rau thơm. Đặc biệt ốc Nghệ An bạn có thể đưa nhanh lên miệng
+                    hút không cần dụng cụ lấy ốc. Nếu có dịp đến Nghệ An đừng chối bỏ cơ hội thử món ốc thơm lừng, béo
+                    ngậy và cay xé lưỡi này bạn nhé.
+                </p>
+                <h2 id="title10">10. Bánh bèo đặc sản Nghệ An</h2>
+                <img src="./NgheAn/BanhBeo.jpg" alt="">
+                <p>Miền Trung nổi tiếng với món bánh bèo dai dai thơm mùi vị của tôm, không giống như bánh bèo Huế làm
+                    từ bột gạo bánh bèo Nghệ An được làm từ bột lộc. Để có một mẻ bánh thơm ngon thì ngay từ khâu nhào
+                    bột đã khá cầu kì, phải nhồi khi nước còn nóng và phải làm nhanh để được mẻ bánh ngon. Nhân của bánh
+                    bèo là nhân tôm những con tôm được làm sạch rồi phi thơm cùng hành mỡ. Tôm xào càng kỹ thì càng ngấm
+                    gia vị, khi ăn càng thơm và càng ngọt bùi. Lúc ăn kèm với nước chấm cay nồng và rau thơm, ăn một
+                    miếng nhớ cả đời.</p>
+                <h2 id="title11">11. Cháo nghêu Cửa Lò đặc sản Nghệ An</h2>
+                <img src="./NgheAn/ChaoNgheu.jpg" alt="">
+                <p>Món ăn thú vị của Cửa Lò về đêm dành cho du khách là món cháo Nghêu nóng hổi thơm ngon. Hương thơm
+                    nhẹ nhàng của gạo hòa quyện với vị ngọt tự nhiên của nghêu tạo nên món ăn đầy thanh nhã. Gia vị cho
+                    món canh ngao tại đây cũng thật khác biệt. Thông thường bát canh ngao chua của người Hà Nội dùng me,
+                    thì ở Cửa Lò vị chua được lấy từ quả chay phơi khô. Người dân ở đây không dùng hành lá nấu canh mà
+                    thay vào đó là lá lốt, lá dấp cá. Tất cả tạo nên món đặc sản Nghệ An ngon không thể chối từ.</p>
+                <h2 id="title12">12. Bánh gai xứ Dừ đặc sản Nghệ An</h2>
+                <img src="./NgheAn/BanhGai.jpg" alt="">
+                <p>Bánh gai là món quen thuộc của nhiều vùng miền, nhưng bánh gai xứ Dừa là đặc sản đặc trưng, thơm ngon
+                    khó cưỡng. Từ lâu đã trở thành món đặc sản Nghệ An nói chung và người dân ở xã Tường Sơn huyện Anh
+                    Sơn nói riêng. Để có được một chiếc bánh gai ngon đúng vị thì khâu chuẩn bị nguyên liệu cũng đã vô
+                    cùng cầu kì từ nếp, đậu xanh, lá gai tươi và dừa khô… Bánh gai xứ Dừa luôn dậy mùi thơm của lá gai,
+                    ngọt bùi của nhân đậu tạo nên nét độc đáo ngon lạ miệng cho bao người tới thưởng thức.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

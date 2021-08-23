@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+                <div class="logo">
+                    ẨM THỰC MIỀN TRUNG
+                </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="ndchinh">
+            <h3 style="margin-left: 22px;">Nội dung chính</h3>
+            <ol type="1">
+                <li><a href="#title1">Mì Quảng Đà Nẵng</a></li>
+                <li><a href="#title2">Bún Bò</a></li>
+                <li><a href="#title3">Bún Mắm Nêm</a></li>
+                <li><a href="#title4">Bún Thịt Nướng</a></li>
+                <li><a href="#title5">Bánh Canh</a></li>
+                <li><a href="#title6">Bún Chả Cá</a></li>
+                <li><a href="#title7">Bún Hải Sản Đà Nẵng</a></li>
+                <li><a href="#title8">Bánh Xèo,Nem Lụi Đà Nẵng</a></li>
+            </ol>
+        </div>
+
+        <div class="cactinhthanh">
+            <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+            <div>
+                <h3>Bắc Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Nam Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Tây Nguyên</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                </ol>
+            </div>
+        </div>
+    </div> -->
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 8 đặc sản Đà Nẵng ngon nức tiếng không thể bỏ lỡ.</h1>
+                </center>
+                <i><span>Để chuyến đi Đà Nẵng của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi đây
+                        chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Đà Nẵng? Hãy theo chân MT.VN khám phá 8 đặc sản Đà Nẵng nổi tiếng ngon mê
+                        ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Mì Quảng Đà Nẵng</h2>
+                <p>Mì Quảng (hay còn gọi là Mì Quảng Khô) là món bạn nhất định phải ăn khi đi du lịch Đà Nẵng. Sợi mì
+                    dày và dai được làm từ bột gạo cùng các nguyên liệu: thịt heo, thịt gà, tôm, chả lụa kèm với chút
+                    nước lèo từ xương hầm, ăn kèm rau sống tạo nên độ ngọt tự nhiên, đậm đà.</p>
+                <img src="./danang/DaNang.jpg" alt="">
+                <b><i>Địa chỉ nơi bán mì Quảng ngon ở Đà Nẵng:</i></b>
+                <ul>
+                    <li>Quán Mì Quảng Thi: 251 Hoàng Diệu, quận Hải Châu, TP.Đà Nẵng</li>
+                    <li>Mì Quảng Bà Mua: 19 Trần Bình Trọng, quận Hải Châu, TP.Đà Nẵng</li>
+                    <li>Mì Quảng Bà Vị: 166 Lê Đình Dương, quận Hải Châu, TP.Đà Nẵng</li>
+                </ul>
+
+                <h2 id="title2">2. Bún Bò</h2>
+                <p>Bún bò bắt nguồn từ Huế nhưng khi đến với Đà Nẵng thì được thay đổi đôi chút để phù hợp với khẩu vị
+                    địa phương. Bún bò Đà Nẵng có sợi nhỏ, nước đậm vị sa tế, ăn cùng thịt tái hoặc bắp bò. Có thể thêm
+                    chút mắm ruốc khi ăn.</p>
+                <img src="./danang/BunBo.jpg" alt="">
+                <b><i>Địa chỉ nơi bán bún bò ngon ở Đà Nẵng:</i></b>
+                <ul>
+                    <li>Bún bò Huế bà Thương: 23 Trần Quốc Toản, quận Hải Châu, TP.Đà Nẵng</li>
+                    <li>Quán bún bò Huế O Ngọc: 48/2 Đường 2 Tháng 9, quận Hải Châu, TP.Đà Nẵng</li>
+                    <li>Quán bún bò Huế O Lành: 145 Hà Huy Tập, quận Thanh Khê, TP.Đà Nẵng</li>
+                </ul>
+
+                <h2 id="title3">3. Bún Mắm Nêm</h2>
+                <p>Vì đặc trưng khí hậu nắng nóng, nên những món bún trộn dần trở thành những món ngon Đà Nẵng được
+                    người dân yêu thích. Bún mắm nêm Đà Nẵng với thành phần gồm bún, thịt heo, rau sống trộn cùng các
+                    loại mắm đậm đà tạo nên hương vị khó quên.</p>
+                <img src="./danang/BunMamNem.jpg" alt="">
+                <b><i>Địa chỉ nơi bán bún mắm nêm ngon ở Đà Nẵng:</i></b>
+                <ul>
+                    <li>Bún mắm Ngọc Đà Nẵng: 20 Đoàn Thị Điểm, Hải Châu, TP. Đà Nẵng</li>
+                    <li>Bún mắm bà Vân: 23/14 Trần Kế Xương, Hải Châu, TP. Đà Nẵng</li>
+                    <li>Bún mắm bà Thuyên Đà Nẵng: K424/03 Lê Duẫn, Thanh Khê, TP. Đà Nẵng</li>
+                </ul>
+
+                <h2 id="title4">4. Bún Thịt Nướng</h2>
+                <p>Bún Thịt Nướng là sự kết hợp của bánh ít và bánh nếp. Do đó, khi ăn món đặc sản Đà Nẵng này, bạn sẽ
+                    có cảm giác vừa quen, vừa lạ đấy.</p>
+                <img src="./danang/BunThitNuong.jpg" alt="">
+                <p>Bún Thịt Nướng có hình tròn, vỏ ngoài được làm bằng bột nếp. Những loại nếp thượng hạng được xay
+                    thành bột mịn rồi cho nước vào nhào nhuyễn. Nhân bánh bao gồm tôm, thịt băm nhỏ cùng chút gia vị đặc
+                    trưng rồi mang đi hấp. Những chiếc Bún Thịt Nướng mới hấp xong, khi khói còn bay nghi ngút. Chiếc
+                    nào chiếc nấy trắng ngần, núc na núc ních vô cùng thích mắt.</p>
+                <p>Khi ăn Bún Thịt Nướng, bạn hãy rưới lên bánh một lớp mỡ hành phi thơm thơm béo ngậy. Sau đó ăn kèm
+                    với chút rau sống, dưa leo nữa là ngon hết sẩy. </p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Quán bún thịt nướng Bình Minh: 23 Lê Thanh Nghị, quận Hải Châu, Tp. Đà Nẵng</li>
+                    <li>Quán bún thịt nướng Cô Trâm địa chỉ: Số 66/7 Ông Ích Đường, quận Cẩm Lệ, Tp. Đà Nẵng</li>
+                    <li>Quán bún thịt nướng Loan địa chỉ: Số 210 Hải Phòng, quận Thanh Khê, Tp. Đà Nẵng</li>
+                </ul>
+
+                <h2 id="title5">5. Bánh Canh</h2>
+                <p>Bánh canh là món ăn bình dân nhưng không kém phần thú hút khách du lịch khi đến Đà Nẵng. Từ nước dùng
+                    làm từ thịt, xương heo cùng với sợi bánh dày và dai, bánh canh có rất nhiều loại như: bánh canh cá,
+                    bánh canh chả, bánh canh cua, hay đơn giản như bánh canh trứng cút.</p>
+                <img src="./danang/BanhCanh.jpg" alt="">
+                <b><i>Địa chỉ nơi bán bánh canh ngon ở Đà Nẵng:</i></b>
+                <ul>
+                    <li>Quán bánh canh Thu: Lô 22 Nguyễn Chí Thanh, quận Hải Châu, Đà Nẵng</li>
+                    <li>Quán bánh canh Tơ: 140 Lê Đình Dương, P. Hải Châu 2, quận Hải Châu, Đà Nẵng</li>
+                </ul>
+
+                <h2 id="title6">6. Bún Chả Cá</h2>
+                <p>Là món ăn đặc trưng ở miền Trung, nhưng chỉ có tại Đà Nẵng bạn mới được ăn ít bún mà nhiều chả vô
+                    cùng. Chả đậm vị cá xay nhuyễn, cá tươi nên giữ được độ dai, nước lèo đậm đà thì không còn gì chê
+                    được!</p>
+                <img src="./danang/BunChaCa.jpg" alt="">
+                <b><i>Địa chỉ nơi bán Bún chả cá Đà Nẵng nổi tiếng:</i></b>
+                <ul>
+                    <li>Quán bún chả cá không tên: 109 đường Nguyễn Chí Thanh, TP. Đà Nẵng</li>
+                    <li>Quán bún chả cá Ông Tạ: 113A Nguyễn Chí Thanh, TP. Đà Nẵng</li>
+                </ul>
+
+                <h2 id="title7">7. Bún Hải Sản Đà Nẵng</h2>
+                <p>Đà Nẵng được thiên nhiên ưu ái với nguồn hải sản phong phú và đa dạng, món bún hải sản ra đời từ
+                    những nguyên liệu như bề bề, mực, tôm, ngao… hòa cùng nước súp có đủ vị chua, cay, mặn, ngọt rất
+                    duyên. Nhiều cái đầu gật gù tấm tắc khen ngon khi trải nghiệm món bún này.</p>
+                <img src="./danang/BunHaiSan.jpg" alt="">
+                <b><i>Địa chỉ nơi bán bún hải sản ngon ở Đà Nẵng:</i></b>
+                <ul>
+                    <li>Quán Thanh Hương: 5 Nguyễn Chí Thanh, quận Hải Châu, Tp. Đà Nẵng</li>
+                </ul>
+
+                <h2 id="title8">8. Bánh Xèo,Nem Lụi Đà Nẵng</h2>
+                <p>Bánh xèo, nem lụi cũng là một trong những món nên nằm trong danh sách ăn uống khi đi du lịch Đà Nẵng.
+                    Bánh xèo vàng giòn rụm ăn cùng xà lách, dưa chuột, chuối xanh… chấm nước mắm thơm ngậy. Bạn có thể
+                    gọi thêm vài xiên nem lụi làm từ thịt thăn nướng than rất nịnh vị.</p>
+                <img src="./danang/BunHaiSan.jpg" alt="">
+                <b><i>Địa chỉ nơi bán bánh xèo, nem lụi ngon ở Đà Nẵng:</i></b>
+                <ul>
+                    <li>Quán Bà Dưỡng: K280/23 Hoàng Diệu, quận Hải Châu, TP. Đà Nẵng</li>
+                    <li>Quán cô Mười: 23 Châu Thị Vĩnh Tế, quận Ngũ Hành Sơn, TP. Đà Nẵng</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <section class="footer bg-img" style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../index.js"></script>
+
+</body>
+
+</html>

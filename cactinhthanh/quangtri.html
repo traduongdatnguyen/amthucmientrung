@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 6 đặc sản Quảng Trị ngon nức tiếng không thể bỏ lỡ.</h1>
+                </center>
+                <i><span>Để chuyến đi Quảng Trị của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực xứ
+                        Quảng chính
+                        là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Quảng Trị? Hãy theo chân MT.VN khám phá 6 đặc sản Quảng Trị nổi tiếng
+                        ngon mê ly qua
+                        bài viết này nhé!</span></i>
+
+                <h2 id="title1">1. Cháo Vạc Giường</h2>
+                <p>Gọi là cháo, nhưng cháo Vạc Giường lại là rất đặc biệt, thoáng nhìn qua, ai cũng nghĩ nó giống bánh
+                    canh hay
+                    canh bún cua bởi chúng đều được làm từ sợi bột gạo hay bột mì, nhưng hương vị lại khác hẳn nhau hoàn
+                    toàn đó.
+                </p>
+                <img src="./quangTri/chaovac.jpg" alt="">
+                <p>Người Quảng thường gọi món ăn với tên dân dã là cháo cá, còn thực khách ghé qua lại đặt cho nó cái
+                    tên thân
+                    thương là cháo Vạc Giường do sợi cháo có hình dáng giống như vạc giường nơi đây.</p>
+                <p>Đến thăm Quảng Trị mà không nếm thử hương vị món cháo bột này là uổng lắm đó. Ghé quán và thưởng thức
+                    thôi.
+                    Một nhúm sợi bột dài mềm, vài lát cá chiên vàng ươm giòn rụm, thêm chút hành lá xanh xanh, chút ớt
+                    cay cay
+                    cùng với nước dùng ngọt thanh thơm mùi cá, hòa quyện cho ra hương vị cháo Vạc Giường vấn vương thực
+                    khách.</p>
+
+                <h2 id="title2">2. Bún Hến Mai Xá Quảng Trị </h2>
+                <img src="./quangTri/bunhen.jpg" alt="">
+                <p>Bún hến Mai Xá, món ăn bình dị thân thuộc đã trở thành đặc sản Quảng Trị nhờ phong vị tinh tế.
+                    Làm nên nét đặc sắc của món bún hến ở Mai Xá đó chính là nguyên liệu chính “chắt chắt”. Nhìn qua ai
+                    cũng lầm
+                    tưởng chắt chắt và hến là một, nhưng khi đã thưởng thức bạn sẽ nhận ra ngay sự khác biệt. Thịt chắt
+                    chắt thơm
+                    mà đậm màu hơn hến, lại giàu chất dinh dưỡng.
+                </p>
+                <p>Những ai đã nếm thử chắc chắn do dân Mai Xá chế biến sẽ không thể nào quên được hương vị tuyệt vời
+                    của món ăn
+                    này. Hành phi vàng ruộm rồi cho chắc chắn vào xào tới, thêm nước vào, bỏ thêm chút gừng chút ớt cay
+                    cay thơm
+                    nồng ăn tới đâu ấm lòng người xa quê tới đó. Bởi vậy, món bún hến này cũng được người dân nhớ tới
+                    như một phần
+                    tuổi thơ, một thời bình dị mà ấm áp.</p>
+
+                <h2 id="title3">3. Bánh Ướt Phương Lang Quảng Trị</h2>
+                <p>Nhắc đến Phương Lang, người ta không chỉ nhớ về ngôi làng với khung cảnh đẹp yên bình mà còn nhớ về
+                    món bánh
+                    ướt ngon nức tiếng “bánh ướt Phương Lang”.</p>
+                <img src="./quangTri/banhuot.jpg" alt="">
+                <p>Cũng được làm như các loại bánh ướt khác, bánh được làm từ gạo là chính. Nhưng làm nên sự khác biệt
+                    cho món
+                    bánh nơi đây chính là kỹ thuật tráng bánh. Bán được tráng cách thủy trên một lớp vải có độ dày vừa
+                    phải, đến
+                    khi chín là có thể vớt ra xếp chồng lên nhau. Điều quan trọng là thợ tráng bánh phải khéo tay biết
+                    lúc nào là
+                    bánh đủ độ ngon, bánh ngon không nên quá dày hay mỏng.</p>
+                <p>Khi thưởng thức, bạn nhớ tách từng lớp bánh ra và cuộn với thịt heo ba chỉ chắc mềm và chút rau sống
+                    tươi
+                    non. Ăn kèm với nó là nước chấm. Nước chấm chua chua, ngọt ngọt, cay cay sẽ đánh thức vị giác bạn
+                    đến từng
+                    “căng-ti-mét”. Hãy cũng VNTRIP.VN đi thưởng thức thôi.</p>
+
+                <h2 id="title4">4. Rau Liệt Gio An (Rau Xà Lách Xong) </h2>
+                <p>Gọi là “Rau Liệt Gio An” là do rau được trồng tại xã Gio An, huyện Gio Linh, tỉnh Quảng Trị. Đến Gio
+                    An nhớ
+                    phải thử món rau này nhé.</p>
+                <img src="./quangTri/rauliet.jpg" alt="">
+                Loại rau này rất “quý” do được sinh trưởng và nuôi dưỡng từ nguồn nước giếng cổ hàng ngàn năm tuổi. Với
+                loại rau
+                này, người Gio An đã nghĩ ra rất nhiều cách chế biến ngon như: nấu canh với tôm tươi, luộc chấm nước mắm
+                hay làm
+                món trộn với thịt bò. Thường thì món rau xà lách xong trộn với thịt bò được ưa thích hơn. Thịt bò tẩm
+                ướp đậm đà
+                đem xào với hành phi tới lửa làm dậy mùi hương quyến rũ. Nước trộn chua thanh ngọt dịu. Trứng luộc chín
+                tới đem
+                thái khoanh. Khi ăn bạn chỉ cần xếp rau ra đĩa, thêm chút thịt bò, rải vài lát trứng rồi tưới nước trộn
+                lên vậy
+                là bạn đã có thể thưởng thức món ngon bổ dưỡng, lạ miệng này rồi.
+
+                <h2 id="title5">5. Thịt Trâu Lá Trơng Quảng Trị</h2>
+                <p>Thịt trâu lá trơng được xứng danh món ăn đặc sản Quảng Trị là nhờ sự kết hợp hài hòa giữa thịt trâu
+                    non và lá
+                    trơng.</p>
+                <img src="./quangTri/traula.jpg" alt="">
+                <p>Lá Trơng mọc khắp mảnh đất Quảng Trị, có thể không quá khi nói rằng món ăn này mang đậm hơi thở miền
+                    đất
+                    Quảng.</p>
+                <p>Thịt trâu lá trơng có thể chế biến thành nhiều nhóm, tuy nhiên thịt trâu lá trơng nướng và thịt trâu
+                    xào lá
+                    trơng là hai món được đón nhận sự yêu thích của thực khách nhất. Người muốn tận hưởng vị thịt nguyên
+                    sơ thơm
+                    phức nên thử món nướng, người thích vị đậm đà nên thử món xào. Mỗi món đặc sắc một kiểu, nếu có điều
+                    kiện bạn
+                    nên thử cả hai để cảm nhận hương vị Quảng Trị. Đặc biệt, trời lành lạnh mà được thưởng thức đĩa trâu
+                    lá trơng
+                    nóng hổi thì còn gì bằng.</p>
+                <h2 id="title6">6. Mít Thấu Quảng Trị </h2>
+                <img src="./quangTri/mitthau.jpg" alt="">
+                <p>Mít Thấu món ngon chỉ có ở Quảng Trị. Món ăn được chế biến từ rất nhiều nguyên liệu tươi ngon như:
+                    mít non,
+                    đậu hũ, đậu phụng, miếng dong, rau sống, da heo,…</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

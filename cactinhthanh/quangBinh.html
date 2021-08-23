@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 12 đặc sản Quảng Bình ngon nức tiếng không thể bỏ lỡ</h1>
+                </center>
+                <i><span>Để chuyến đi Quảng Bình của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực xứ
+                        Quảng chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Quảng Bình? Hãy theo chân MT.VN khám phá 12 đặc sản Quảng Bình nổi tiếng
+                        ngon mê ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Bánh xèo Quảng Bình</h2>
+                <p>Bánh xèo là một món ăn miền Trung vô cùng thân quen với người dân Việt. Thế nhưng, để thưởng thức
+                    bánh xèo miền Trung đặc trưng đúng vị thì phải tìm đến bánh xèo Quảng Hoà ở Quảng Bình. Điều đặc
+                    biệt làm nên đặc sản bánh xèo Quảng Hoà là bởi món “cá chuối” độc đáo làm từ chuối sứ được thái nhỏ,
+                    luộc chín rồi uốn thành hình con cá trông lạ mắt. Cùng với những nguyên liệu dân giã như gạo đỏ,
+                    tôm, cá chuối và được thưởng thức bằng cách cuộn cùng với các loại rau sống, bánh đa, chấm cùng nước
+                    mắm, bánh xèo Quảng Hoà có mùi thơm thoang thoảng của gạo lứt và có vị giòn tan nóng hổi càng ăn
+                    càng thèm.</p>
+                <img src="./quangBinh/BanhXeo.png" alt="">
+
+                <h2 id="title2">2. Cháo canh cá lóc Quảng Bình</h2>
+                <img src="./quangBinh/CanhCaLoc.png" alt="">
+                <p>Cháo canh cá lóc là một trong những món đặc sản Quảng Bình được nhiều người yêu thích tại đây. Được
+                    làm từ sợi bánh canh to ăn “đẫy miệng”, kết hợp cùng nước dùng nóng hổi ngon từ thịt, ngọt từ xương,
+                    và đặc biệt là những miếng cá lóc chiên sơ giòn giòn, cháo canh cá lóc sẽ là món ăn mà đã ăn một lần
+                    là sẽ nhớ mãi muôn đời.</p>
+
+                <h2 id="title3">3. Lẩu cá khoai Quảng Bình </h2>
+                <img src="./quangBinh/LauKhoai.png" alt="">
+                <p>Lẩu cá khoai được chế biến từ loài cá khoai có xương mềm, thịt nhão. Để làm nên món ăn đặc trưng này,
+                    cá khoai phải tươi và dày thịt để không bị nát, nước lẩu cũng phải có đầy đủ các nguyên liệu như
+                    nước cốt me, khế chua, măng chua, cà chua,… mới tạo nên hương vị ngọt chua đặc trưng. Đến Quảng Bình
+                    vào mùa đông thì đừng quên quây quần bên nồi nước lẩu nóng hổi và thưởng thức món lẩu cá khoai vô
+                    cùng thơm ngon nhé!</p>
+
+                <h2 id="title4">4. Đặc sản lươn đồng, hàu</h2>
+                <img src="./quangBinh/LuonHau.png" alt="">
+                <p>Với giá chỉ từ 25-50k/bát, các món ăn đặc sản nổi tiếng của Quảng Bình như cháo lươn, súp lươn, miến
+                    lươn, và cháo hàu tuy nghe có phần giản dị, mộc mạc nhưng lại mang hương vị thơm ngon đến không ngờ.
+                    Những con hàu thì to béo, ngon ngọt, lươn đồng thì luôn được sơ chế sạch sẽ loại bỏ mùi tanh, tạo ra
+                    hương vị ngọt mềm, thấm đẫm gia vị đã tạo ra nhưng món ăn ngon làm say mê nhiều thực khách. Hãy tìm
+                    đến quán chị Ngạnh tại 18 Hoàng Diệu, thành phố Đồng Hới để thưởng thức những món đặc sản lươn đồng
+                    và hàu nổi tiếng của Quảng Bình nhé.</p>
+
+                <h2 id="title5">5. Đẻn biển Quảng Bình</h2>
+                <img src="./quangBinh/DenBien.png" alt="">
+                <p>Đặc sản Quảng Bình nổi tiếng với sự độc và lạ và trong đó phải kể đến món đẻn biển. Đẻn biển là một
+                    loại rắn biển thân thon nhỏ, mình vằn da nhám, đầu nhỏ đuôi dẹt và mang giá trị dinh dưỡng cao. Từ
+                    đẻn biển, người Quảng Bình có thể chế biến ra nhiều món ngon hấp dẫn như: Ram đẻn, cháo đẻn, chả
+                    đẻn, tiết đẻn, đẻn bằm xúc bánh đa, đẻn hầm sả ớt, đẻn nướng cuốn lá lốt, đẻn hầm thuốc bắc và rượu
+                    tiết đẻn. Ram đẻn có lẽ là món ăn phổ biển hơn cả với lớp vỏ giòn rụm và nhân đẻn thơm ngậy, càng ăn
+                    càng “ghiền”.</p>
+
+                <h2 id="title6">6. Sò huyết sông Roòn Quảng Bình </h2>
+                <img src="./quangBinh/SoHuyet.png" alt="">
+                <p>Sò huyết sông Roòn là một đặc sản không thể bỏ qua ở Quảng Bình. Sò huyết ở vùng sông này có thể được
+                    chế biến thành rất nhiều món ăn, nhưng đặc sắc nhất có lẽ là sò huyết tái chanh và sò huyết chần
+                    nước mắm. Với cách chế biến độc đáo cùng với nguyên liệu tươi ngon bổ dưỡng, món ăn này chắc chắn sẽ
+                    là đặc sản không thể bỏ qua khi du lịch Quảng Bình.</p>
+
+                <h2 id="title7">7. Mực khô Quảng Bình </h2>
+                <img src="./ThanhHoa/CaRoDamSet.jpg" alt="">
+                <p>Đã đến với vùng biển Quảng Bình thì không thể nào quên thưởng thực món mực thơm ngon.
+                    Mực được nướng trên lửa than hồng, xé nhỏ thành nhiều sợi,
+                    thưởng thức cùng với tương ớt thì thấy rõ được vị ngon ngọt của mực hoà quyện cùng vị ớt cay nồng,
+                    vừa ăn vừa “nhấm nháp” cùng chút bia là ngon hết sảy không thể quên.</p>
+
+                <h2 id="title8">8. Cá nghéo Quảng Bình</h2>
+                <img src="./quangBinh/CaNgheo.png" alt="">
+                <p>Là một đặc sản nức tiếng ở vùng đất Quảng Bình, cá nghéo (hay còn gọi là cá nhám) có ít mỡ, nhiều
+                    nạc, da nhám và được làm nguyên liệu cho rất nhiều món ăn ngon. Nếu như gỏi cá nghéo dùng với nước
+                    lèo, rau sống ngon thanh mát, cá nghéo kho với nghệ, gừng lại đậm đà, thì cháo cá nghéo lại dân giã
+                    với mùi hành phảng phất, nóng hổi mà bổ dưỡng, có thể ăn để giải cảm, giải sốt.</p>
+
+                <h2 id="title9">9. Nấm tràm Quảng Bình</h2>
+                <img src="./quangBinh/NamTram.png" alt="">
+                <p>Là loại nấm mọc ven dọc bên bờ của những con suối và có tai nấm tròn, màu tím đậm, nấm tràm là nguyên
+                    liệu cho một số các món ăn quen thuộc của người dân Quảng Bình như: Cháo nấm tràm, nấm tràm xào
+                    mực,… nhưng có lẽ món ăn xuất hiện nhiều nhất trong các bữa ăn của người Quảng Bình là món canh nấm
+                    tràm. Canh có thể được nấu cùng rau lang, rau muống, lá lốt cùng chút ruốc, tỏi phi mang đến hương
+                    vị đậm đà ngon lạ miệng,
+                    đậm chất đặc sản Quảng Bình quê hương không thể lẫn.</p>
+
+                <h2 id="title10">10. Khoai deo Quảng Bình </h2>
+                <img src="./quangBinh/KhoaiDeo.png" alt="">
+                <p>Nhắc đến đặc sản Quảng Bình thì không thể bỏ qua món khoai deo. Khoai deo (hay còn gọi là sâm đất) là
+                    một món ăn vô cùng bổ dưỡng và được chế biến từ khoai lang đỏ trồng trên đất thịt. Người Quảng Bình
+                    cẩn thận chế biến khoai deo từ công đoạn chọn khoai, đem khoai đi luộc chín rồi cắt lát và phơi trên
+                    cát trong khoảng 9-12 ngày nắng. Khi thưởng thức bạn sẽ cảm nhận được vị khoai ngọt bùi nguyên chất
+                    và thấm đậm hương vị của gió và cát trắng.</p>
+
+                <h2 id="title11">11. Bánh bột lọc Quảng Bình </h2>
+                <img src="./quangBinh/BotLoc.png" alt="">
+                <p>Người dân Quảng Bình đã “thổi hồn” vào bánh bột lọc Huế và tạo ra một đặc sản riêng cho vùng đất đầy
+                    nắng và gió này. Bánh bột lọc được làm từ bột sắn lọc, tôm sông, mộc nhĩ cùng chút gia vị đơn giản.
+                    Sau khi bọc bột bánh với tôm, vắt thành hình tai bèo nhỏ xinh, bánh được nhúng nước sôi để ăn liền,
+                    hoặc được gói lá chuối và đồ lên như đồ xôi cho những người mang đi xa.
+                    Ở Quảng Bình thì chỉ cần vài chục nghìn thôi là bạn có thể thoả thích ăn no nê một “chầu” bánh lọc
+                    bột thơm dẻo!</p>
+
+                <h2 id="title12">12. Bánh khoái Quảng Bình </h2>
+                <img src="./quangBinh/BanhKhoai.png" alt="">
+                <p>Bánh khoái là loại đặc sản Quảng Bình có nguyên liệu khá giống bánh xèo nhưng cách chế biến, hình
+                    dạng và hương vị thì lại có điểm khác biệt. Bột để làm bánh được chọn từ loại gạo ngon, sau khi xay
+                    nhuyễn sẽ hoà với nước, đánh với lòng đỏ trứng gà, tạo ra một hỗn hợp lỏng. Nhân bánh bao gồm thịt
+                    nạc heo băm nhỏ, tôm, giá. Khi thưởng thức bạn sẽ cảm thấy được vị thơm ngon của nhân tôm, thịt,
+                    phảng phất hương gạo thơm của vỏ bánh giòn tan, chấm với nước mắm đậu lạc, gan heo bùi ngậy.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

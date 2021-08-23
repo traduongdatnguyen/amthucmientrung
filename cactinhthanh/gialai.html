@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="ndchinh">
+            <h3 style="margin-left: 22px;">Nội dung chính</h3>
+            <ol type="1">
+                <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                <li><a href="#title2">Bánh ít lá gai </a></li>
+                <li><a href="#title3">Mực ngào Bình Định</a></li>
+                <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                <li><a href="#title5">Tré Bình Định</a></li>
+                <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                <li><a href="#title7">Nem chợ huyện</a></li>
+                <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                <li><a href="#title9">Gỏi cá chích</a></li>
+            </ol>
+        </div>
+
+        <div class="cactinhthanh">
+            <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+            <div>
+                <h3>Bắc Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Nam Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Tây Nguyên</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                </ol>
+            </div>
+        </div>
+    </div> -->
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 9 đặc sản Gia Lai ngon nức tiếng không thể bỏ lỡ</h1>
+                </center>
+                <i><span>Để chuyến đi Gia Lai của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi đây
+                        chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Gia Lai? Hãy theo chân MT.VN khám phá 9 đặc sản Gia Lai nổi tiếng ngon mê
+                        ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Phở khô Gia Lai</h2>
+                <img src="./gialai/PhoKho-GiaLai.jpg" alt="">
+                <p>Phở khô Gia Lai còn được gọi là “Phở hai tô” vì nó bao gồm 1 tô phở khô và 1 tô nước dùng đi kèm. Khi
+                    ăn, cho tóp mỡ, rau giá, xà lách… lên trên rồi cho tương vào, trộn đều các thành phần lên rồi từ từ
+                    thưởng thức. Sợi phở khô khá đặc biệt, dù được làm từ bột gạo nhưng không mềm và dẹp như bánh phở
+                    thông thường mà có dáng tròn, mảnh và hơi dai. Nhờ vậy mà khi trộn đều lên, sợi phở rất dễ thấm gia
+                    vị nhưng không bị nát.</p>
+
+                <h2 id="title2">2. Bún cua</h2>
+                <img src="./gialai/BunCua-GiaLai.jpg" alt="">
+                <p>Theo người dân phố núi, món ăn có nguồn gốc từ những người Bình Định di dân đến Gia Lai, là sự pha
+                    trộn giữa mắm cua, thịt ba chỉ, măng, chả, nem chua, da heo chiên giòn, bánh phồng tôm, rau sống…
+                    Với mùi hơi khó ngửi đặc trưng, dần dà người ta gọi là bún cua thối để phân biệt với các món bún
+                    riêu khác. Tuy nhiên không nhiều khách dám thử bởi mùi thum thủm của cua thối, nhưng nếu đã ăn rồi
+                    thì khó lòng mà quên được bởi hương vị rất đặc trưng</p>
+
+                <h2 id="title3">3. Cơm lam</h2>
+                <img src="./gialai/ComLam-GiaLai.jpg" alt="">
+                <p>Cơm lam hay còn gọi là Cơm nướng ống được coi là món ăn của núi rừng bởi nó chứa đựng sự ngọt ngào
+                    của suối và hương vị thơm ngon của loại gạo đặc biệt nơi đây.</p>
+
+                <h2 id="title4">4. Gà nướng mọi</h2>
+                <img src="./gialai/GaNuong-GiaLai.jpg" alt="">
+                <p>Gà nướng mọi ăn với cơm lam được xem như thứ đặc sản đáng tự hào mà người Gia Lai thường giới thiệu
+                    với khách phương xa. Gia vị ướp gà là bí quyết để món gà nướng của Gia Lai trở nên quyến rũ. Công
+                    thức không được tiết lộ, thế nhưng chỉ cần ngửi mùi khói nướng, người sành ăn đã có thể cảm nhận
+                    được hương mật ong, hương tỏi, sả, ngũ vị hương hòa quyện.</p>
+
+                <h2 id="title5">5. Gỏi lá</h2>
+                <p>Không chỉ ở Kon Tum, đến Pleiku các bạn cũng dễ dàng tìm được và thưởng thức món đặc sản của núi rừng
+                    Tây Nguyên này. Gỏi lá ở phố Núi Pleiku nói riêng có tới 30 loại lá khác nhau, thậm chí có nơi có từ
+                    40 đến 50 loại lá. Trong đó có những loại lá quen thuộc như: Cải, tía tô, sung, đinh lăng, mơ, hành,
+                    húng… và có cả những loại lá chỉ núi rừng Tây Nguyên mới có.</p>
+                <img src="./gialai/GoiLa-GiaLai.jpg" alt="">
+                <p>Tất nhiên, gỏi lá không thể chỉ có lá mà còn có nước chấm được làm từ gạo nếp cho lên men đem ủ với
+                    tôm khô, thịt ba chỉ rồi xay nhuyễn. Sau đó người làm nước chấm phi hành thơm cùng mẻ, sa tế, gia vị
+                    rồi cho vào hầm tạo nên thứ nước chấm sền sệt, ngon ngất ngây. Cùng với đó, đĩa thức ăn đi kèm quen
+                    thuộc đó là thịt ba chỉ luộc thái mỏng, có thêm tôm Biển Hồ, bì lợn luộc và được trang trí nằm gọn
+                    giữa một mâm xanh màu lá, liền kề đĩa muối hột, ớt xanh…</p>
+
+                <h2 id="title6">6. Bò một nắng</h2>
+                <p>Bò một nắng có tên gọi đầy đủ là “Bò một nắng hai sương”, thịt bò chỉ phơi một nắng cho vừa héo nên
+                    khi đem nướng trên lửa than đượm thơm ngon lạ lùng. Đây là món ăn được nhiều người ưa thích. </p>
+                <img src="./gialai/BoMotNang-GiaLai.jpg  -800x533.jpg" alt="">
+                <p>Để món này được thơm ngon đúng điệu, trước hết phải chọn loại bò cỏ tơ, được chăn thả tự nhiên trên
+                    các triền núi, mé sông và chỉ chọn phần thịt đùi và thịt thăn để chế biến. Thịt được thái thành
+                    những lát vừa phải, ướp thấm tháp với nhiều gia vị như muối, sả, đường, bột ngọt, hạt nêm, ớt khô
+                    rồi phơi qua một nắng. Khi ăn du khách nướng trên lửa than, lật trở cho chín đều, se khô và hơi rám
+                    cháy là ngon nhất. Món này ăn kèm với muối kiến được làm từ những tổ kiến lấy trên rừng về, làm
+                    sạch, giã nhuyễn cùng muối hạt, ớt, lá then len… tạo thành vị cay chua rất độc đáo.</p>
+
+                <h2 id="title7">7. Muối kiến vàng Krông Pa</h2>
+                <img src="./gialai/MuoiKienVang-GiaLai.jpg" alt="">
+                <p>Muối làm từ loại kiến vàng rừng vùng Ayun Pa, Krông Pa có thể khiến nhiều người lắc đầu nguầy nguậy
+                    khi nhìn. Nhưng nếu đã nếm qua hương vị hoang sơ này một lần thôi sẽ hiểu vì sao lên Gia Lai nhất
+                    định phải mua muối kiến vàng về làm quà hoặc ăn dần. Muối kiến vàng ăn có mùi rất đặc trưng hơi chua
+                    chua, nồng nồng, béo béo, ngòn ngọt cay cay của kiến vàng rất bắt mồi với các món nướng hay các loại
+                    hoa quả chua.</p>
+
+                <h2 id="title8">8. Heo sọc dưa</h2>
+                <img src="./gialai/HeoSocDua-GiaLai.jpg" alt="">
+                <p>Heo sọc dưa có nguồn gốc và hương vị như heo rừng được người dân bản địa thuần hóa nuôi thả vườn
+                    trong gia đình. Tuy nuôi trong vườn nhà nhưng với lối sống của đồng bào dân tộc Bahnar, Jrai vẫn còn
+                    dựa vào thiên nhiên nên loài heo sọc dưa này vẫn được nuôi thả rông như heo rừng và thịt săn, thơm
+                    đậm, ngọt như heo rừng vậy, ăn khác hẳn với các loại heo thông thường chúng ta hay dùng.</p>
+
+                <h2 id="title9">9. Lụi nướng</h2>
+                <img src="./gialai/LuiNuong-GiaLai.jpg" alt="">
+                <p>Từ “lụi” là từ địa phương, thay cho từ “xiên nướng”. Là một món ăn truyền thống dân gian của những
+                    người dân vùng đất đỏ. Được nướng trên bếp than hồng ấm áp của những ngày đầu đông lạnh nhẹ, vỏ bánh
+                    tráng của lụi càng trở nên giòn tan. Thịt xay, nấm mèo được cuốn trong vỏ bánh cũng tự nhiên dậy mùi
+                    bởi lửa nóng khiến bụng người ta không khỏi cồn cào.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

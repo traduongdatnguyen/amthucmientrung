@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 9 đặc sản Quảng Ngãi ngon nức tiếng không thể bỏ lỡ</h1>
+                </center>
+                <i><span>Để chuyến đi Quảng Ngãi của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi
+                        đây chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Quảng Ngãi? Hãy theo chân MT.VN khám phá 9 đặc sản Quảng Ngãi nổi tiếng
+                        ngon mê ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Don</h2>
+                <p>Don là một sinh vật thuộc họ nhà hến và chỉ cư trú tại sông Trà, sông Vệ ở Quảng Ngãi. Chính vì thế
+                    mà từ lâu, các món ăn làm từ Don đã trở thành văn hoá ẩm thực của người Quảng Ngãi. Người ta phải
+                    ngâm nước hàng giờ để thu hoạch Don. Sau đó đem về rửa sạch và luộc cho đến khi há miệng mở vỏ để
+                    lấy được phần nước dùng thanh mát và nguyên chất.</p>
+                <p>Thịt Don được đem phi cùng với tỏi băm nhuyễn, hành tây và một ít tiêu xay. Sau đó, họ nhúng những
+                    miếng bánh tráng nướng vào tô nước dùng rồi thả những chú don ngon nhất vào đó. Tiếp đến, rắc lên
+                    thêm hành tây, ớt và tiêu xay là đã hoàn thành bát canh Don ngon đúng điệu.</p>
+                <p>Món ăn là sự kết hợp giữa nước canh đậm đà, thanh mát, cay the hoà quyện với sự ngọt béo từ thịt Don.
+                    Tất cả đã làm nên hương vị độc nhất vô nhị của món ăn này. Chỉ với 15.000 đồng du khách đã có ngay
+                    cho mình một bát canh Don nóng hổi.</p>
+                <img src="./quangngai/Don-Quang-Ngai-2.jpg" alt="">
+
+                <h2 id="title2">2. Cá bống sông Trà </h2>
+                <p>Nhắc đến những món ăn dân dã, bình dị của Quảng Ngãi, người ta không thể không nghĩ đến món cá bống
+                    sông trà kho tiêu. Món ăn đã gắn bó mật thiết với bữa cơm của người dân địa phương từ bao đời nay.
+                </p>
+                <p>Không quá cầu kỳ nhưng cá bống kho tiêu lại đầy thu hút bởi hương vị thơm ngon. Cá bống sau khi làm
+                    sạch được đem kho cùng với một số gia vị như tiêu, ớt, tỏi trong nồi đất. Khi thưởng thức, bạn sẽ
+                    cảm nhận được vị ngọt, vị cay cùng vị mặn của thịt cá đọng trên đầu lưỡi. Cá bống sông Trà kho tiêu
+                    ngon nhất là khi ăn cùng với cơm trắng. </p>
+                <img src="./quangngai/cabongsongtra.jfif" alt="">
+
+                <h2 id="title3">3. Mắm Nhum</h2>
+                <p>Đến quảng ngãi mà không thưởng thức mắm Nhum thì quả là một điều đáng tiếc. Đây là loại mắm mà thuở
+                    xưa, người Quảng Ngãi dùng để tiến vua.</p>
+                <p>Nguyên liệu chính là những con Nhum biển bám chặt trên gành đá. Sau khi làm sạch và lấy được phần
+                    thịt, người ta đem vào ủ muối theo tỉ lệ trong một cái vại lớn rồi vùi trong bếp tro hoặc phơi ngoài
+                    nắng khoảng 20 ngày mới có thể cho ra được một mẻ mắm ngon đúng điệu. Mắm ủ càng lâu càng có vị đậm
+                    đà, mùi thơm ngào ngạt. Chỉ với 125.000 đồng du khách đã có ngay cho mình một hũ mắm ngon mang về
+                    làm quà.</p>
+                <img src="./quangngai/mamNhum-800x450.jpg" alt="">
+
+                <h2 id="title4">4. Cá cơm</h2>
+                <p>Cá cơm là một nguyên liệu quen thuộc tại Quảng Ngãi và được chế biến thành nhiều món ăn đa dạng,
+                    phong phú. Ngoài làm các món kho, chiên để ăn cùng cơm trắng, cá cơm còn được dùng để làm mắm hoặc
+                    chế biến thành gỏi. Dù được chế biến như thế nào thì cá vẫn mang hương vị mằn mặn, thơm ngon. Cá cơm
+                    được bày bán tại các cửa hàng, siêu thị ở Quảng Ngãi với giá 300.000/kg.</p>
+                <img src="./quangngai/cacom-800x450.jpg" alt="">
+
+                <h2 id="title5">5. Chim mía</h2>
+                <p>Chim mía là một món ăn được rất nhiều du khách yêu thích khi ghé đến quảng Ngãi. Những con chim mía
+                    được vợt bắt khi thu hoạch vào mùa mía rồi đem chế biến thành các món ăn đa dạng như chiên, hấp,
+                    nướng, làm cháo. Món nào cũng ngon và đầy hấp dẫn. </p>
+                <p>Bạn sẽ không bao giờ quên được hương vị thơm béo từ thịt chim, xương lại rất mềm, mùi hương thơm phức
+                    được toả ra từ những xâu chim mía nướng được bày bán dọc các con đường khi ghé đến Quảng Ngãi.</p>
+                <img src="./quangngai/chimmia-800x450.jpg" alt="">
+
+                <h2 id="title6">6. Sò điệp</h2>
+                <p>Một trong những món hải sản nổi tiếng nhất ở Quảng Ngãi phải kể đến món sò điệp nướng. Còn gì tuyệt
+                    vời hơn khi ngồi hóng mát ở bãi biển đầy nắng và gió, vừa chiêm ngưỡng cảnh sắc thiên nhiên vừa
+                    thưởng thức dĩa sò điệp nướng thơm lừng.</p>
+                <p>Những con sò điệp được tách vỏ, đem nướng trên than hồng, rải thêm một ít mỡ hành, đậu phộng ăn kèm
+                    với rau răm và nước mắm chua ngọt. Mùi vị béo ngậy, thơm ngon của thịt sò tan trong miệng chắc chắn
+                    sẽ khiến du khách thích thú.</p>
+                <img src="./quangngai/sodiep-800x450.jpg" alt="">
+
+                <h2 id="title7">7. Bún cá ngừ um</h2>
+                <p>Bún cá ngừ um là một món ăn đòi hỏi sự tỉ mỉ, tận tâm trong lúc chế biến mới có thể cho ra được hương
+                    vị bún thơm ngon đúng điệu. Món ăn đã làm say lòng biết bao thực khách bởi sự kết hợp hoàn hảo của
+                    các hương vị. Khi thưởng thức, du khách sẽ cảm nhận được một chút vị cay của ớt hoà lẫn với vị thanh
+                    của rau và vị béo ngậy của thịt cá ngừ trong tô nước dùng.</p>
+                <p>Tuy được chế biến kỳ công nhưng giá của món ăn này không hề đắt chút nào. Chỉ với 25.000 đồng bạn đã
+                    có thể thưởng thức trọn vẹn hương vị của một tô bún ngon hết sẩy.</p>
+                <img src="./quangngai/buncangu-800x450.jpg" alt="">
+
+                <h2 id="title8">8. Bún riêu cua</h2>
+                <p>Thị trấn sông Vệ (Tư nghĩa) là nơi nổi tiếng làm món bún riêu cua ngon nhất ở Quảng Ngãi. Nơi đây từ
+                    lâu đã trở thành điểm dừng chân của nhiều khách thập phương khi muốn thưởng thức một tô bún riêu đậm
+                    đà hương vị, được chế biến từ cua đồng.</p>
+                <p>Tô bún bắt mắt với những cọng bún nhỏ, trắng, phía trên được phủ lên một lớp chả cua, chả trứng đầy
+                    ắp, điểm thêm vài cọng hành lá cắt nhỏ. Khi nếm vào, vị ngọt béo đậm đà của nước dùng đọng trên đầu
+                    lưỡi. Tất cả đã làm nên hương vị khó quên trong lòng thực khách.</p>
+                <img src="./quangngai/bunrieucuaa-800x450.jpg" alt="">
+
+                <h2 id="title9">Cúm núm Sa Huỳnh</h2>
+                <p>Du khách đến Quảng Ngãi đừng quên ghé qua biển Sa Huỳnh để vừa trải nghiệm thú vui săn cúm núm vừa
+                    thưởng thức món ăn ngon từ loại hải sản này. Những con cúm núm còn tươi nguyên được vùi trong đống
+                    lửa cho đến khi chín. Thịt cúm núm ngọt, béo thưởng thức cùng với bia rất tuyệt. Đây chắc chắn sẽ là
+                    một kỉ niệm khó quên đối với du khách.</p>
+                <img src="./quangnam/cac-mon-an-dac-san-quang-nam-tam-huu.jpg" alt="">
+                <p>Nước chấm tam hữu được pha chế đơn giản từ mắm, tỏi, đường. Chấm ngập cuộn tam hữu vào nước mắm rồi
+                    cho cả vào miệng thì mới thưởng thức được chọn vẹn cái hương vị đặc trưng. Vị tam hữu the the do rau
+                    trà quế, tôm đất còn vỏ giòn, thịt ba chỉ thơm, ngậy,…thưởng thức tới đâu là thấm thía tới đó.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Làng Trà Quế: làng Trà Quế, Cẩm Hà, Hội An, Quảng Ngãi</li>
+                </ul>
+
+                <h2 id="title10">Món xương rồng Quảng Ngãi độc – lạ</h2>
+                <p>Bạn có biết hóa ra xương rồng cũng có thể chế biến thành món ăn được không? Từng là loại thực phẩm
+                    cứu đói của người dân địa phương, món xương rồng Quảng Ngãi nay đã trở thành đặc sản.</p>
+                <p>Người ta có thể luộc, xào hay thậm chí làm salad với xương rồng. Quan trọng nhất vẫn là chọn những lá
+                    non rồi sơ chế sạch sẽ, gọt phần gai bên ngoài cùng lớp màng xanh thì mới bắt đầu chế biến được.</p>
+                <img src="./quangngai/cumnum-800x450.jpg" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

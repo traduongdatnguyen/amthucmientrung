@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 7 đặc sản Lâm Đồng ngon nức tiếng không thể bỏ lỡ.</h1>
+                </center>
+                <i><span>Để chuyến đi Lâm Đồng của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi đây
+                        chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Lâm Đồng? Hãy theo chân MT.VN khám phá 7 đặc sản Lâm Đồng nổi tiếng ngon
+                        mê ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Bánh mì xíu mại Đà Lạt</h2>
+                <img src=".//lamdong/BanhMiXiuMai.jpg" alt="">
+                <p>Món xíu mại này vốn có gốc hoa, bánh mì xíu mại là một đặc sản của Đà Lạt mà nhiều bạn yêu thích.
+                    Những viên thịt xay được tẩm ướp với gia vị riêng, vo tròn luộc chín rồi sau đó vớt ra trong một bát
+                    nước dùng béo ngậy, tất cả ăn kèm với bánh mì. Ngoài Đà Lạt, khi đến Bảo Lộc các bạn cũng dễ dàng
+                    tìm thấy món ăn này.</p>
+
+                <h2 id="title2">2. Bánh ướt lòng gà</h2>
+                <p>Được làm nên từ các loại rau rừng. Bánh ướt lòng gà là một trong những món ăn đặc sản ở Lâm Đồng cực
+                    kỳ nổi tiếng của ẩm thực Tây Nguyên.Hương vị của món canh thụt được làm nên nhờ các loại rau rừng,
+                    đây không phải là món ăn phổ biến thường ngày mà là món ăn chỉ dùng để đãi khách quý.</p>
+                <img src="./lamdong/BanhUotLongGa.jpg" alt="">
+                <p>Nếu như ở vùng khác, bánh ướt thường đi kèm chả thì ở Lâm Đồng, bánh ướt được biến tấu lạ miệng với
+                    thịt và lòng gà. Sự kết hợp giữa miếng bánh ướt mềm cùng thịt gà thơm ngọt và lòng gà dai dai tạo
+                    thành một món ăn chơi thú vị. Gạo làm bánh là loại gạo tẻ được trộn thêm chút bột năng cùng khoai mì
+                    tạo độ thơm và dẻo. Sau khi ngâm gạo, xay, trộn thêm các loại bột và cho tỉ lệ nước nhất định để khi
+                    tráng không bị vỡ. Bánh được linh hoạt tráng từng lớp, để bánh đều mặt và không bị chỗ dày chỗ mỏng.
+                </p>
+                <p>Lòng và thịt gà dùng kèm với bánh ướt cũng được quán chuẩn bị rất kỹ lưỡng. Gà thường là loại gà ta
+                    được nuôi ở vườn để có thịt chắc và không dai. Để tránh mùi tanh, lòng gà sau khi sơ chế sẽ được ướp
+                    sơ qua với chút gia vị cùng hành tỏi.</p>
+
+                <h2 id="title3">3. Nem nướng Đà Lạt</h2>
+                <img src="./lamdong/NemNuong.jpg" alt="">
+                <p>Nem nướng Đà Lạt bắt buộc phải được làm từ loại thịt tươi. Khi ăn phải ăn cùng với rau sống, bánh
+                    tráng, dưa món. Một cuốn nem nướng sẽ đầy đủ với vị đậm, thơm của nem nướng, vị chua của dưa món, vị
+                    mát của rau xanh… Một điều làm nên hương vị đặc trưng của nem nướng Đà Lạt chính là nước chấm. Đó là
+                    loại nước tương màu vàng được làm từ thứ gạo nếp ngon thơm nhất. Nó không loãng cũng không đặc quá,
+                    mà sền sệt vừa tạo được độ dính, mà lại đậm đà thanh thanh.</p>
+
+                <h2 id="title4">4. Bánh căn Đà Lạt</h2>
+                <img src="./lamdong/BanhCan.jpg" alt="">
+                <p>Đây là loại bánh rất phổ biến ở Đà Lạt. Sẽ có rất nhiều bạn tưởng nhầm đây là bánh khọt vì cũng là
+                    loại bánh làm bằng bột gạo pha vào nước rồi đổ vào khuôn. Nhưng hai loại bánh này khách nhau. Màu
+                    vàng của bánh căn là do trứng còn bánh khọt là do nghệ.</p>
+
+                <h2 id="title5">5. Bánh bèo Đà Lạt</h2>
+                <img src="./lamdong/BanhBeo.jpg" alt="">
+                <p>Không phải như bánh bèo Huế, bánh bèo ở xứ sở ngàn hoa rất khác. Bánh bèo ở đây ăn trong đĩa sẽ được
+                    chan nước nhân thịt lên, cùng với bóng cá, da heo hoặc bánh mì chiên giòn rắc lên trên.</p>
+
+                <h2 id="title6">6. Canh hoa atiso hầm giò heo</h2>
+                <img src="./lamdong/hoa.jpg" alt="">
+                <p>Là một đặc sản của riêng Đà Lạt, canh hoa atiso hầm giò heo ăn ở bất cứ nơi nào khác cũng không có
+                    hương vị như giữa đất trời nơi đây. Trong các món ăn từ atiso, hầm giò heo là hút người ăn nhất. Ăn
+                    miếng atiso hay giò heo đã ninh nhừ đều thấy trọn vẹn vị hòa quyện vào nhau của món ăn.</p>
+
+                <h2 id="title7">7. Phá lấu Bảo Lộc</h2>
+                <img src="./lamdong/pha-lau-bao-loc.jpg" alt="">
+                <p>Phá lấu là một món ăn xuất xứ Trung Quốc được làm từ lưỡi, tai, ruột cho đến bao tử của heo, bò hay
+                    vịt. Phá lấu thường được ăn kèm với bánh mì, cơm, cháo… Ở Bảo Lộc các bạn có thể thưởng thức phá lấu
+                    nước ăn kèm với bánh mì, phá lấu xào me chua chua ngọt ngọt hay phá lấu trứng muối có vị bùi và béo.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

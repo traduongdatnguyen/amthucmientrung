@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="ndchinh">
+            <h3 style="margin-left: 22px;">Nội dung chính</h3>
+            <ol type="1">
+                <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                <li><a href="#title2">Bánh ít lá gai </a></li>
+                <li><a href="#title3">Mực ngào Bình Định</a></li>
+                <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                <li><a href="#title5">Tré Bình Định</a></li>
+                <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                <li><a href="#title7">Nem chợ huyện</a></li>
+                <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                <li><a href="#title9">Gỏi cá chích</a></li>
+            </ol>
+        </div>
+
+        <div class="cactinhthanh">
+            <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+            <div>
+                <h3>Bắc Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Nam Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Tây Nguyên</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                </ol>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 6 đặc sản Kon Tum ngon nức tiếng không thể bỏ lỡ.</h1>
+                </center>
+
+                <i><span>Để chuyến đi Kon Tum của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi đây
+                        chính là
+                        một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Kon Tum? Hãy theo chân MT.VN khám phá 6 đặc sản Kon Tum nổi tiếng ngon mê
+                        ly qua bài
+                        viết này nhé!</span></i>
+
+                <h2 id="title1">1. Gỏi lá Kon Tum</h2>
+                <img src="./KonTum/GoiLa-KonTum.jpg" alt="">
+                <p>Đúng như tên gọi, món ăn có đến 40-50 loại lá khác nhau, gồm ổi, sung, xoài, me, đinh lăng, ngũ gia
+                    bì, lá
+                    chua, chùm ruột, tía tô, ngãi cứu, hồng ngọc… Món gỏi lá này được ăn kèm với thịt heo ba chỉ luộc
+                    thái mỏng,
+                    tôm đồng luộc, bì heo. Điều làm nên sự độc đáo của món ăn này là nước chấm kèm theo làm nên hương vị
+                    rất
+                    riêng. Để thưởng thức món ăn, thực khách ngắt lá cây cuộn thành hình phễu rồi cho vào lát thịt ba
+                    chỉ, con
+                    tôm, bì heo, ít hạt muối trắng, tiêu và rưới lên ít nước chấm là có thể dùng được.</p>
+
+                <h2 id="title2">2. Xôi măng</h2>
+                <img src="./KonTum/XoiMang-KonTum.jpg" alt="">
+                <p>Chỉ là món xôi nấu từ gạo nếp quen thuộc, kết hợp khéo léo với măng rừng nhưng đã trở thành món điểm
+                    tâm sáng
+                    thân thuộc với mỗi người dân tại Kon Tum. Cách làm xôi măng khá đơn giản và chẳng mấy cầu kỳ. Măng
+                    tươi sau
+                    khi được đào trên rừng về lột bỏ vỏ ngoài, rửa sạch và thái miếng vừa ăn. Qua công đoạn sơ chế để
+                    làm mất mùi
+                    ngái, măng được đem xào qua với gia vị để trở nên đậm đà. Gạo nếp chọn loại ngon đem ngâm trong nước
+                    muối
+                    loãng có pha thêm bột nghệ để lên màu khoảng 8 tiếng thì mang ra đồ chín.</p>
+
+                <h2 id="title3">3. Cá tầm Măng Đen</h2>
+                <img src="./KonTum/CaTam.gif" alt="">
+                <p>Do có khí hậu khá mát mẻ nên vùng đất này tương đối phù hợp để nuôi cá tầm, trước kia lượng cá tầm
+                    nuôi ở
+                    Măng Đen khá nhiều nhưng sau một thời gian không thể cạnh tranh được về giá với cá tầm Trung Quốc
+                    đưa đến nên
+                    hiện nay hầu như không còn.</p>
+
+                <h2 id="title4">4. Thịt hun khói Bazana</h2>
+                <img src="./KonTum/ThitHunKhoi.jpg" alt="">
+                <p>Món này được chế biến từ thịt lợn mòi của người dân Bana, do được thả rông chỉ ăn ngô và khoai trong
+                    vườn nên
+                    thịt lợn rất thơm, ngon. Phần thịt ngon nhất sẽ được cắt ra và đem tẩm ướp bằng các hương liệu riêng
+                    của địa
+                    phương. Cuối cùng, miếng thịt được treo lên gác bếp, hun bằng khói trong thời gian dài cho chín. Món
+                    này tương
+                    tự thịt gác bếp của đồng bào Tây Bắc, chỉ khác về phần tẩm ướp nguyên liệu.</p>
+
+                <h2 id="title5">5. Thịt chuột quý tộc</h2>
+                <img src="./KonTum/ThitChuotQuyToc.jpg" alt="">
+                <p>Đây là tên gọi của người dân trồng sâm Ngọc Linh ở vùng Tu Mơ Rông gán cho loài chuột, vốn chỉ rình
+                    ăn những
+                    cây sâm Ngọc Linh quý hiếm. Món này được xem là đặc sản của người dân ở Măng Ri, bởi chúng đã ăn sâm
+                    Ngọc Linh
+                    – loài dược liệu quý hiếm của vùng đất Tu Mơ Rông. Chỉ khi có các dịp lễ lớn hoặc khách nào quý lắm
+                    mới được
+                    người dân đem ra đãi.</p>
+
+                <h2 id="title6">6. Cá niên</h2>
+                <p>Ở Kon Plông, cá niên là đặc sản. Bởi loại cá này chỉ xuất hiện ở những sông suối có nguồn nước sạch,
+                    chảy
+                    xiết, ghềnh đá rất khó bắt và thường xuất hiện nhiều vào thời điểm những tháng mùa khô hoặc mùa
+                    xuân. Thức ăn
+                    của loài cá này chủ yếu là rong rêu bám trên đá nên ruột của chúng rất đắng, được nhiều người ưa
+                    chuộng (xem
+                    như một vị thuốc). </p>
+                <img src="./KonTum/CaNien.jpg  -800x533.jpg" alt="">
+                <p>Thịt cá niên rất trắng, chẳng những không có mùi tanh mà ngược lại rất thơm ngon và được đánh giá có
+                    nhiều
+                    dưỡng chất. Cá niên có nhiều cách chế biến, nếu nướng, cá chỉ cần để nguyên con rửa sạch rồi xiên
+                    vào thanh
+                    tre đặt trên bếp than. Khi cá chín vàng gỡ ra chấm với muối ớt.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

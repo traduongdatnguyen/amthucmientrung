@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 9 đặc sản Huế ngon nức tiếng không thể bỏ lỡ</h1>
+                </center>
+                <i><span>Để chuyến đi Huế của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực xứ Huế chính
+                        là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Huế? Hãy theo chân MT.VN khám phá 9 đặc sản Huế nổi tiếng ngon mê ly qua
+                        bài viết này nhé!</span></i>
+                <h2 id="title1">1. Cơm Hến</h2>
+                <p>Cơm hến ngon nhất chỉ có ở Huế. Cơm hến tuy là món ăn dân dã có khắp mọi nơi dù ở thôn xóm hay đường
+                    quê, nghèo mà vẫn sang, đậm đà hương vị. Cơm hến được làm từ cơm trắng nấu chín và để nguội. Người
+                    ta cho phần thịt hến cùng các phụ gia, thêm tóp mỡ được chiên giòn. Cơm hến có thêm chút mắm ruốc
+                    Huế vừa bùi, chát, cay và hăng. Được ăn kèm với phụ gia là rau sống gồm có: rau sống, bắp chuối, giá
+                    đỗ và ít thân khoai môn trắng thái nhỏ. Lạc được rang vàng và phi dầu vàng cho có màu đẹp mắt.</p>
+                <img src="./ThuaTH/ComHen.jpg" alt="">
+                <p>Cơm hến ngon nhất là ở cồn Hến, hoặc quán chị Nhỏ, bán trong ngõ đường Phạm Hồng Thái, góc giao với
+                    Trương Định – nhưng chỉ bán buổi sáng, đến trưa là hết, hoặc không thì ăn ở số 2 Trương Định. Cơm
+                    hến khá rẻ, một tô chỉ khoảng 10.000 đồng.</p>
+
+                <h2 id="title2">2. Bánh canh Bà Đợi</h2>
+                <p>Nằm trên đường Đào Duy Anh, ở cuối một con hẻm nhỏ có một quán bánh canh không bảng hiệu. Quán hoạt
+                    động theo lối gia đình ít nhân công nên khách thường phải đợi hơi lâu, vì thế quán được khách quen
+                    gọi là quán bà Đợi. (người Huế quen gọi là mụ Đợi). Dù bánh canh của quán này được thái sợi dẹt như
+                    kiểu Quảng Bình chứ không nén khuôn sợi tròn, nhưng nước dùng thì đặc phong cách Huế.</p>
+                <img src="./ThuaTH/BanhCanh.jpg" alt="">
+                <p>Nước dùng của quán này có vị đậm đà và thơm tự nhiên của tôm. Khi tô bánh canh được bưng ra, nước
+                    trong, chả và tôm tươi giòn sần sật, thực khách sẽ gia thêm tiêu, muối, chanh, tương ớt dầu và hành
+                    lá thái nhỏ bầy sẵn trên bàn, mặc dù tự nước dùng trong tô đã đủ ngon vị lắm rồi... Vì vậy mà hiếm
+                    khi khách bỏ sót nước dùng trong tô bánh canh ở quán bà Đợi.</p>
+
+                <h2 id="title3">3. Chè Hẻm</h2>
+                <p>Ông bà ta ngày xưa thường nói nếu ngoài Hà Nội có “36 phố phường” thì Huế cũng có “36 thứ chè”. Không
+                    ai biết chè hẻm có ở Huế từ bao giờ mà chỉ biết gọi là thế, bởi nó thường nằm sâu trong các ngõ
+                    ngách với rất nhiều loại chè khác nhau.</p>
+                <img src="./ThuaTH/chehem.jpg" alt="">
+                <p>Mỗi loại chè có một hương vị riêng, ngon bổ, tinh tế và cầu kỳ như chính con người nơi đây. Chè bắp
+                    ngọt mát tinh khiết, vừa thơm vừa bùi nấu từ bắp ngô non của cồn Hến, chè hạt sen với thứ hương trầm
+                    thật lạ của giống sen hồ Tịnh Tâm – loại sen “tiến vua”. Lại còn chè nhãn bọc hạt sen ngọt thanh,
+                    thơm bùi và nhiều loại chè như chè hạt lựu, chè trôi nước, chè khoai sọ, chè bột lọc…</p>
+                <p>Có một loại chè nghe rất lạ tai mà chỉ Huế mới có: chè bột lọc thịt heo quay. Được chế biến cầu kỳ từ
+                    những miếng thịt heo quay cắt khúc nhỏ, bọc ngoài là bột nếp, cho thêm đường nấu thành chè. Khi ăn,
+                    món chè này cho ta một cảm giác rất lạ, vừa ngọt lại vừa mặn, béo ngậy khó diễn tả thành lời…</p>
+
+                <h2 id="title4">4. Cơm chay Huế</h2>
+                <p>Nếu bạn muốn có một bữa ăn thanh đạm và để cơ thể được thanh lọc thì hãy thử một bữa cơm chay tại
+                    Huế. Các món chay cũng rất đa dạng và phong phú, chỉ từ rau, củ, nấm, đậu phụ… nhưng bạn đã có một
+                    bữa cơm đầy đủ và thịnh soạn vô cùng.</p>
+                <img src="./ThuaTH/comchay.jpg" alt="">
+                <p>Khách đến Huế, nếu thích được thưởng thức một bữa cơm chay thì ngoài những Phật tử biết nấu cơm chay
+                    ngon để mời thân mật ở gia đình, có thể liên hệ các chùa để thưởng thức một bữa cơm chay Huế đặc
+                    biệt. Bạn đến chùa nào cũng được, nhưng tốt hơn cả là chùa Từ Đàm, vì ở đây là chùa sư nữ nên có
+                    nhiều ni cô nấu cơm chay ngon, lại ở ngay trong thành phố - trên đường Điện Biên Phủ.</p>
+
+                <h2 id="title5">5. Bún bò Huế</h2>
+                <p>Bún bò Huế chính là linh hồn của ẩm thực Huế, độ ngon và nổi tiếng của món ăn này chắc không phải bàn
+                    nhiều. Bún bò Huế có một miếng chân giò, một miếng giò tự nắm, một miếng tiết lợn nhỏ và tất nhiên
+                    phải có vài lát thịt bò. Rau ăn kèm cũng rất tươi và phong phú. Địa chỉ ăn bún bò Huế nổi tiếng
+                    nhất: 13 Lý Thường Kiệt (cạnh Nhà khách Công đoàn). Ngoài ra, khắp nơi ở Huế bạn cũng sẽ dễ dàng tìm
+                    thấy một quán bún bò chất lượng. Giá một tô bún bò Huế khoảng 30.000 đồng.</p>
+                <img src="./ThuaTH/bunbohue.jpg" alt="">
+
+                <h2 id="title6">6. Bún thịt nướng, bánh ướt thịt nướng</h2>
+                <p>Nếu bạn đang tìm đặc sản Huế để làm quà nhưng ngại vận chuyển đồ tươi sống, mắm cáy sẽ là sự lựa chọn
+                    lý tưởng nhất.</p>
+                <img src="./ThuaTH/bunthitnuong.jpg" alt="">
+                <p>Các quán bánh ướt thịt nướng và bún thịt nướng ngon nằm trên mạn Kim Long – đường đi chùa Thiên Mụ
+                </p>
+
+                <h2 id="title7">7. Các loại bánh Huế: Bánh bèo, bánh bột lọc, bánh khoái</h2>
+                <p>Có dịp đến Huế, mới thấy bánh bèo gắn bó với đời sống sinh hoạt của người dân cố đô như thế nào.
+                    Khoảng từ 3 đến 5 giờ chiều, trên các ngõ phố, những phụ nữ quẩy gánh trên vai hoặc chiếc thúng nhỏ
+                    cắp ngang hông, đi bán bánh bèo, bánh lọc đến từng nhà. Người Huế rất thích và đã thành thói quen
+                    dùng loại bánh đầy hương vị quê nhà này vào các bữa ăn phụ.</p>
+                <img src="./ThuaTH/banhbeo.jpg" alt="">
+                <p>Các bạn có thể đến các “Khu phố Bánh bèo” như: cung An Định, đường Ngự Bình, đường Nguyễn Bỉnh
+                    Khiêm... để tận mắt thưởng thức “văn hóa bánh bèo” tại đây.</p>
+                <img src="./ThuaTH/banhbotloc.jpg" alt="">
+                <p>Bánh khoái đổ bằng bột gạo xay đánh sệt với nước và lòng đỏ trứng, sau đó thêm tiêu, hành, mắm, muối,
+                    tôm bóc vỏ, thịt bò (hoặc chim) nướng thái lát, mỡ thái lát nhỏ, giá sống. Bánh ngon một phần nhờ
+                    nước lèo, thứ nước chấm chỉ các đầu bếp giỏi mới chế được. Ðây là bí quyết gia truyền, quyết định
+                    chất lượng, tạo nên hương vị thượng hạng của bánh khoái.</p>
+                <img src="./ThuaTH/banhkhoai.jpg" alt="">
+                <p>Bánh khoái nổi tiếng nhất là bánh khoái Thượng Tứ, quán có 3 chi nhánh là Lạc Thiện, Lạc Thạnh và
+                    Bạch Yến.</p>
+
+                <h2 id="title8">8. Bánh chưng Nhật Lệ<h2>
+                        <p>Đây là món ăn nổi tiếng ở Huế và có xuất xứ từ con phố Nhật Lệ trong thành Nội, nơi tập trung
+                            hàng chục lò làm bánh. Bánh thơm dẻo, ăn rất khoái khẩu do sự kết hợp nhuần nhuyễn mùi vị
+                            giữa nhân đậu, thịt (mỡ và nạc) với gạo nếp và các loại gia vị như tiêu, hành. Người ăn quen
+                            lâu ngày thành nghiện, thành thèm.</p>
+                        <img src="./ThuaTH/banhchung.jpg" alt="">
+                        <p>Ăn bánh chưng Nhật Lệ khi nguội ngon hơn khi nóng. Bóc lớp lá chuối ra, màu bánh xanh thơm
+                            nhức mắt. Cắn một miếng, nhân đậu thịt mỡ màu nâu trắng béo bùi ngập chân răng.</p>
+
+                        <h2 id="title9">9. Nem lụi chất Huế</h2>
+                        <p>Nhiều người thường nói “Nem lụi là một trong những món ăn đặc sệt Huế”’. Ở đường Nguyễn Huệ
+                            có hai quán nem lụi. Suốt ngày đêm quán nào cũng chật ních người ăn. Khách hàng lần đầu ăn
+                            nem lụi, ai cũng xuýt xoa khen ngon để rồi ăn tiếp lần hai, lần ba, thậm chí ăn hàng ngày
+                            như dân “nghiện" và lần nào cũng vẫn cứ khen ngon.</p>
+                        <img src="./ThuaTH/nemlui.jpg" alt="">
+                        <p>Khi ăn, lấy bánh đa nem gói thịt viên nướng cùng với rau, thơm, khế, giá, lát chuối xanh thái
+                            mỏng, miếng vả thái sống, ớt màu... lấy lá hành buộc lại rồi chấm với một thứ nước đặc biệt
+                            gọi là nước lèo. Nước lèo dùng cho nem lụi được pha chế từ hàng chục nguyên liệu khác nhau
+                            như dầu thực vật, gan lợn, bột đao, đường, tương nước mắm, quế chi, hoa hổi trộn với nước
+                            cốt dừa.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 9 đặc sản Phú Yên ngon nức tiếng không thể bỏ lỡ</h1>
+                </center>
+                <i><span>Để chuyến đi Phú Yên của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi đây
+                        chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Phú Yên? Hãy theo chân MT.VN khám phá 9 đặc sản Phú Yên nổi tiếng ngon mê
+                        ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Bò một nắng</h2>
+                <p>Nhắc đến đặc sản Phú Yên, người ta nhớ ngay đến món bò một nắng được chế biến một cách công phu, tỉ
+                    mỉ từ bước chọn nguyên liệu cho đến khi thành phẩm.</p>
+                <p>Nguyên liệu là những miếng thịt thăn (hoặc đùi) ngon nhất của giống bò chăn thả tự nhiên trên vùng
+                    núi Sơn Hoà. Sau đó đem về dùng rượu rửa sạch rồi cắt ra thành những miếng hình chữ nhật có độ dày
+                    từ 1,5 - 2cm.</p>
+                <p>Tiếp đến họ ướp thịt cùng các nguyên liệu như hành, tỏi, ớt, tiêu, mắm, sả,..cùng một số gia vị khác
+                    trong vòng 15p cho thịt ngấm rồi đem ra phơi nắng. Đợi thịt khô rồi đem vào bảo quản và đóng gói.
+                    Thịt được nướng trên bếp than cho chín hẳn rồi mới bắt đầu thưởng thức. Những sớ thịt bò giòn dai,
+                    đậm đà vị ngọt cay ăn kèm với rau sống và nước tương trông thật hấp dẫn.
+                </p>
+                <p>Giá dao động từ 450 - 500.000 đồng/kg</p>
+                <img src="./phuyen/bobo1-800x600.jpg" alt="">
+
+                <h2 id="title2">2. Khô mép cá ngừ đại dương </h2>
+                <p>Bên cạnh món khô bò một nắng, khô mép cá ngừ đại dương ở Phú Yên cũng nổi tiếng không kém. Khô cá ngừ
+                    ở đây được chế biến bằng phương pháp sấy khô nhưng vẫn giữ nguyên được độ dẻo dai và mùi vị đặc
+                    trưng của biển cả.</p>
+                <p>Còn gì tuyệt vời khi cùng bạn bè nhâm nhi vài ly rượu và thưởng thức món khô cá ngừ nướng chấm với
+                    tương ớt cay ngon hấp dẫn.
+                </p>
+                <p>Giá dao động từ 350 - 400.000 đồng/kg</p>
+                <img src="./phuyen/khomepa-800x655.jpg" alt="">
+
+                <h2 id="title3">3. Bánh tráng Hòa Đa</h2>
+                <p>Ở Phú Yên có rất nhiều loại bánh tráng nhưng nổi tiếng nhất phải kể đến bánh tráng Hòa Đa. Sỡ dĩ bánh
+                    ở đây đặc biệt là bởi phần vỏ được tráng rất vừa tay, chất bánh dẻo dai, ít bị dính khi nhúng nước
+                    và bánh không có vị chua.</p>
+                <p>Bánh được dùng để cuốn với nem, thịt, cá ăn cùng rau sống và mắm nêm rất ngon. Ngoài ra, người ta còn
+                    dùng bánh nướng lên ăn kèm với các món gỏi, nộm,...</p>
+                <p>Giá tham khảo: 250.000 đồng/xấp 100 cái</p>
+                <img src="./phuyen/banhtranga-800x463.jpg" alt="">
+
+                <h2 id="title4">4. Rượu Quán Đế</h2>
+                <p>Một trong những đặc sản ở Phú Yên được nhiều du khách lựa chọn làm quà mang về đó là rượu quán Đế.
+                    Thuở xưa đây từng là loại rượu được chọn làm vật phẩm tiến vua.</p>
+                <p>Rượu Quán đế được nấu bằng phương pháp cổ truyền với nguyên liệu là gạo, nước và chủng men tự nhiên.
+                    Rượu có nhiều loại: rượu trắng, rượu cá ngựa, rượu sâm hay rượu ngâm thuốc với nhiều công dụng bồi
+                    bổ sức khỏe.</p>
+                <img src="./phuyen/rieu-800x446.jpg" alt="">
+
+                <h2 id="title5">5. Cá bớp nướng</h2>
+                <p>Nếu đã đến Phú Yên, du khách sẽ không bao giờ quên cảm giác được tận hưởng mâm cá bớp nướng nóng hổi
+                    trên những chiếc lồng bè lênh đênh gần biển.</p>
+                <p>Những con cá bớp nướng trên bếp than tỏa mùi thơm nồng hấp dẫn. Đó là mùi hương hòa lẫn giữa vị cay
+                    cay của ớt, vị thơm của sả. Khi nếm vào thịt cá dai ngon khiến thực khách phải tấm tắc khen ngợi.
+                </p>
+                <img src="./phuyen/cabopm-800x563.jpg" alt="">
+
+                <h2 id="title6">6. Cháo hàu</h2>
+                <img src="./phuyen/chaohao-800x533.jpg" alt="">
+                <p>Du khách đến Phú Yên thì không nên bỏ qua món cháo hàu trên đường Lê Lợi. Sở dĩ người ta thường nhắc
+                    đến cháo hàu nơi đây là bởi mùi vị của cháo rất độc đáo. Hàu tươi được nấu vừa chín để giữ được độ
+                    dai và ngọt, hạt cháo mềm hòa lẫn với mùi thơm nồng nàn của gừng tươi và vị mặn mà của nước mắm.</p>
+
+                <h2 id="title7">7. Cua Huỳnh Đế</h2>
+                <img src="./phuyen/cuaaa-800x600.jpg" alt="">
+                <p>Một trong những món hải sản nổi tiếng nhất của Phú Yên phải kể đến cua Huỳnh Đế. Cua Huỳnh Đế làm món
+                    nào cũng ngon bởi thịt cua chắc và ngọt nước, khi chế biến vẫn giữ được vẹn nguyên vị ngọt đậm đà.
+                </p>
+                <p>Chính cái vị ngọt đặc trưng ấy đã tạo nên hương vị khó cưỡng của nhiều món ăn. Đặc sắc nhất chính là
+                    món cháo cua với vẻ ngoài đẹp mắt, thơm lừng. Những miếng thịt cua trắng tinh rải trên lớp nền đỏ au
+                    của gạch khiến món ăn thêm phần hấp dẫn.</p>
+
+                <h2 id="title8">8. Sò huyết đầm Ô Loan</h2>
+                <img src="./phuyen/sohuyet-800x515.jpg" alt="">
+                <p>Đầm Ô Loan (Phú Yên) không chỉ nổi tiếng với phong cảnh hữu tình mà ở đây còn có các món sò huyết
+                    thơm ngon làm say lòng biết bao du khách.</p>
+                <p>Khác với các địa phương khác, sò huyết đầm Ô Loan có thịt dày, nhiều huyết, dai ngọt đậm đà. Tại đây,
+                    thực khách sẽ được lựa chọn các món ăn đa dạng, phong phú được làm từ sò huyết như sò huyết xào,
+                    rang me, rang hành, cháy tỏi, tiết canh, gỏi,...</p>
+                <p>Dĩa sò huyết thơm ngon, ngậy mùi hương từ ngoài vỏ cho đến bên trong thịt sò chắc chắn sẽ khiến thực
+                    khách khó lòng mà cưỡng lại được.</p>
+
+                <h2 id="title9">Ghẹ sông Cầu</h2>
+                <p>Nếu có dịp ghé đến sông Cầu - Phú Yên, thực khách hãy thử qua món ghẹ nơi đây. Ghẹ sông Cầu chỉ nhỏ
+                    bằng nắm tay nhưng thịt chắc và béo, càng và yếm lốm đốm những vệt nâu trắng.</p>
+                <img src="./phuyen/gheee-800x548.jpg" alt="">
+                <p>Ghẹ được chế biến thành các món khác nhau như luộc, hấp, nướng, rang me, rang muối,.. đều rất ngon.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../foodvietnam/assets/amthucmientrung.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Giới thiệu-Ẩm thực Miền Trung</title>
+</head>
+<style>
+    :root {
+        --primary-color: #0F9D58;
+        --background-color: #f0f3f7;
+        --secon-color: #9da2ad;
+        --grey: #7a7a7b;
+        --white: #ffffff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        box-sizing: border-box;
+    }
+
+    .menu-item:hover,
+    .menu-item.active2 {
+        color: var(--white);
+        background-color: var(--primary-color);
+        border-radius: 1rem;
+    }
+
+    #active1:hover {
+        color: var(--white);
+        background-color: var(--primary-color);
+        border-radius: 1rem;
+    }
+
+    #active1 {
+        color: var(--grey);
+        background-color: var(--background-color);
+        border-radius: 1rem;
+    }
+
+    body {
+        background: var(--background-color);
+        max-width: 100%;
+    }
+
+    .gioithieu {
+        max-width: 100%;
+        margin-top: 6%;
+    }
+
+    .phangioithieu {
+        margin-left: 4%;
+    }
+
+    #noidunggioithieu {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    h2.name-gioithieu {
+        text-align: center;
+        color: var(--primary-color);
+    }
+
+    .thanhchuyen {
+        text-decoration: none;
+    }
+
+    .gioithieu h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: 2%;
+    }
+
+    .thanhchuyen:hover {
+        text-decoration: none;
+        color: var(--grey);
+    }
+
+    #noidunggioithieu img {
+        width: 70%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    p {
+        line-height: 1.5rem;
+        color: var(--grey);
+        font-size: 17px;
+        text-align: justify;
+    }
+</style>
+
+<body>
+
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../../foodvietnam/gioithieu.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../../foodvietnam/index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../../foodvietnam/index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="index.html">
+                <div class="logo">
+                    ẨM THỰC MIỀN TRUNG
+                </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <nav class="gioithieu">
+        <h2 class="name-gioithieu">GIỚI THIỆU VỀ VIỆT NAM</h2>
+        <h3><a class="thanhchuyen" href="../foodvietnam/index.html">Trang Chủ</a>&#10095;&#10095; <a class="thanhchuyen"
+                href="#" style="color: var(--grey);">Giới Thiệu</a></h3>
+        <div class="phangioithieu">
+            <p class="namedt_vh">Nét đặc trưng trong văn hóa ẩm thực Việt Nam | Khám phá ẩm thực #1</p>
+            <p class="time">
+                <img src="https://www.banhkhome.com/images/date.svg">"04/04/2021"
+            </p>
+        </div>
+        <div id="noidunggioithieu">
+            <p>
+                Tôi Sinh ra trong một đất nước Hòa Bình. Con Người nơi đây vừa giản dị vừa thân thiện. Từ ngày xưa, con
+                người
+                của đất nước tôi đã rất dũng cảm và yêu nước. Bao nhiêu anh hùng đã hi sinh, bao nhiêu phụ nữ phải chịu
+                khổ và
+                đứng ra đấu tranh... Từ trong bom đạn, cuối cũng cái đất nước vừa thân vừa thiện ấy cũng dành được hoàn
+                bình.
+                Cho đến bây giờ nó vẫn tràn đây cái nét đẹp văn hóa ấy, một nét văn hóa thiêng liêng của bản sắc dân tộc
+                Việt
+                Nam.
+                Tôi thực sự rất từ hào về đất nước mình. Bao nhiêu trang sử đã ghi lại, cũng là bao nhiêu cảm xúc mà tôi
+                có. Tôi
+                yêu những vị anh hùng, tôi yêu người phụ nữ Việt Nam và thế hệ trẻ nữa.
+                Cũng giống này xưa, hiện này đất nước cũng có nhiều tấm gương đáng noi và theo sau. Thế hệ trẻ ngày càng
+                nhận
+                thức được bản thân và có tinh thần trách nhiệm trong việc học hành và luôn có tư tưởng chiến đấu vì đất
+                nước.
+                Tôi cũng vậy, là một thành viên của đất nước, tôi cũng muốn gây dựng nên nhiều nền tảng và xây dựng đất
+                nước
+                thành một nước phát triền.
+            </p>
+            <p>
+                Nhắc đến miền Trung là nhắc đến mảnh đất cằn cỗi và không được thiên nhiên ưu ái như các vùng khác, vì
+                vậy,
+                người dân nơi đây luôn biết trân trọng và biến những sản vật tuyệt vời của quê hương thành những món ăn
+                mang
+                hương vị rất riêng và đặc biệt. Không đa dạng như lối ẩm thực Bắc, cũng không phồn vinh như ẩm thực miền
+                Nam
+                nhưng ẩm thực miền Trung lại có một chiều sâu riêng, mang đậm chất thanh tao nhẹ nhàng của vùng đất chịu
+                nhiều
+                thiên tai bão tố.
+            </p>
+            <p>
+                Nhắc đến Miền Trung, có thể kể đến những món ăn nổi tiếng làm nức lòng bao người yêu ẩm thực như Mì
+                Quảng,
+                Cơm Hến, Bún Bò Huế,…Những món ăn của người miền Trung thường được chăm chút kĩ lưỡng về hình thức lẫn
+                nội dung,
+                họ cũng rất cầu kì từ cách chọn nguyên liệu cho đến cách trình bày. Và Huế chính là điển hình cho tinh
+                hoa của
+                ẩm thực miền Trung. Tại Huế, ăn uống được xem là một trong những loại hình văn hóa nên rất được coi
+                trọng, có
+                thể chia ẩm thực Huế thành hai loại khác nhau là ẩm thực cung đình và ẩm thực dân gian.
+            </p>
+            <center><img src="https://cdn.beptruong.edu.vn/wp-content/uploads/2016/05/bun-bo-hue-am-thuc-mien-trung.jpg"
+                    alt="bunbohue"></center>
+            <center><i class="imgchitiet">
+                    Món Bún Bò Huế nổi tiếng trong ẩm thực miền Trung
+                </i></center>
+            <p>
+                Huế là nơi ở của nhiều Vua Chúa Việt Nam, vì vậy nơi đây sản sinh ra nhiều món ăn ngon và đặc sắc mang
+                đậm chất
+                cung đình, rất cầu kì về chế biến cũng như trang trí. Vì vậy, các món ăn cung đình này ngày xưa chỉ được
+                nấu
+                trong cung cho các Vua triều Nguyễn thưởng thức và không được lưu hành rộng rãi trong dân gian. Mỗi bữa
+                ăn của
+                Vua thời đó thường phải từ 35 đến 50 món, trong đó phải có một món thuộc bát trân như Nem Công, Chả
+                Phượng, Da
+                Tây Ngưu, Bàn Tay Gấu, Gân Nai, Yến Sào,…Với những món ngon đặc biệt sẽ được ghi chép lại và lưu truyền
+                vào đời
+                sau, cứ như thế, món ăn cung đình Huế ngày càng phong phú và đa dạng.
+            </p>
+            <center><img width="70%"
+                    src="https://cdn.beptruong.edu.vn/wp-content/uploads/2016/05/mon-an-cung-dinh-hue.jpg" alt="">
+            </center>
+            <center><i class="imgchitiet">Món ăn cung đình Huế cầu kì trong chế biến cũng như trang trí</i></center>
+            <p> Nói đến ẩm thực dân gian là nói đến ẩm thực của sự dân dã, bình dị. Đó là món ăn được chế biến theo
+                nguyên lí,
+                trang trí và những thói quen ăn uống rất riêng của con người xứ Huế. Đó là sự hài hòa âm dương, ngũ hành
+                trong
+                mâm cơm gia đình. Sự hài hòa độc đáo mang đậm khẩu vị của người Huế như muốn mặn thì có Ruốc, ngọt thì
+                có Chè,
+                béo thì có Bún Bò, cay thì có Cơm Hến…Sự đậm đà trong hương vị tạo nên sự đặc trưng cho món ăn xứ Huế.
+            </p>
+            <p>Về gia vị, người miền Trung đặc biệt thích ăn cay, dù là món ăn cao lương mỹ vị hay món ăn dân dã đời
+                thường,
+                một khi đã thưởng thức thì thực khách không thể quên cái vị cay rất đặc biệt, không hề giống miền Nam
+                hay Bắc.
+                Ớt được coi là vị nhạc trưởng trong chế biến món ăn cay của người miền Trung. Từ bát Bún Bò cho đến điểm
+                tâm
+                sáng, rồi Cơm Hến, Bún Hến, cho đến các loại nước chấm Bánh Lọc, Bánh Nậm,…tất cả đều cay. Ngoài những
+                món ăn
+                mặn thông dụng, miền Trung còn nổi tiếng với những món ăn “có một không hai”, không thể tìm thấy ở vùng
+                miền
+                khác như Cá Bống Sông Trà, Chim Mía, Kẹo Gương, Mạch Nha, Đường Phổi và Món Don… tất cả rất đậm đà hương
+                vị của
+                một miền quê. </p>
+            <p>Một nét văn hóa đặc sắc trong ẩm thực miền Trung phải kể đến nữa là các loại bánh và chè. Ở đây, chè có
+                đến mấy
+                chục loại, trong đó có những loại chè mang màu sắc cung đình và sang trọng như Chè Hạt Sen, Chè Long
+                Nhãn Bọc
+                Hạt Sen, Chè Đậu Ngự,…mỗi loại chè có hương vị khác biệt nhưng đều có vị rất thơm ngon và hấp dẫn. Người
+                Huế khi
+                nấu chè thường dùng nguyên liệu là Mạch Nha, Đường Phổi, Đường Phèn để tôn vinh món chè tao nhã của
+                mình.</p>
+            <center><img width="70%"
+                    src="https://cdn.beptruong.edu.vn/wp-content/uploads/2016/05/che-long-nhan-boc-hat-sen-mien-trung.jpg"
+                    alt=""></center>
+            <center><i class="imgchitiet">Chè Long Nhãn Bọc Hạt Sen thanh tao xứ Huế</i></center>
+            <p>Một món bánh nổi tiếng được nhiều người yêu thích và thường mua về làm quà mỗi khi đến miền Trung đó là
+                Bánh Ít
+                Lá Gai. Không như Bánh Ít miền Nam hay Bắc, Bánh Ít Lá Gai miền Trung nghe tên đã thấy sự dân dã bình dị
+                mà nó
+                vốn đã như vậy. Chiếc bánh đủ nhỏ cho người ăn thưởng thức, vị dẻo thơm, ngọt bùi.</p>
+            <center><img src="https://cdn.beptruong.edu.vn/wp-content/uploads/2016/05/banh-it-la-gai.jpg" alt="">
+            </center>
+            <center><i class="imgchitiet">Bánh Ít Lá Gai dân dã của người miền Trung</i></center>
+            <p>Ẩm thực miền Trung đặc biệt với hai loại hình ẩm thực trái ngược nhau. Một lối ẩm thực cầu kì, nặng về lễ
+                nghi
+                còn lối kia thì lại rất bình dân, dung dị, đơn giản. Thế nhưng, không phải ẩm thực sang trọng thì có giá
+                trị,
+                ngon và hấp dẫn hơn ẩm thực dân dã. Ở miền Trung, ẩm thực chính là sự hội tụ hài hòa ở cả hai loại hình
+                ẩm thực
+                trên. Hãy cứ thử đến miền Trung một lần, bạn sẽ tự hào vì những món ăn Việt Nam vô cùng phong phú và đặc
+                sắc. Và
+                một khi đã thưởng thức thì chắc chắn bạn sẽ không thể nào quên. Còn nếu được, bạn hãy thử tham gia các
+                khóa học
+                nấu ăn với ẩm thực Việt tại các trường dạy nấu ăn uy tín để được khám phá những nét sang trọng nhưng
+                cũng khá
+                bình dị trong ẩm thực Miền Trung.
+                Đến đây, kỳ 5 của chuỗi bài “Ngược dòng thời gian, tìm hiểu về ông tổ nghề Bếp” xin được khép lại. Hãy
+                thường
+                xuyên theo dõi các kỳ tiếp theo của chuỗi bài này để cùng chúng tôi khám phá những đặc sắc trong ẩm thực
+                của
+                từng vùng miền trên khắp đất nước nhé!
+            </p>
+        </div>
+    </nav>
+    <script>
+        //search
+
+        let searchForm = document.querySelector('.search-form');
+        document.querySelector('#search-btn').onclick = () => {
+            searchForm.classList.toggle('active');
+            heartBtn.classList.remove('active');
+        }
+        let heartBtn = document.querySelector('.heart-items-container');
+        document.querySelector('#heart-btn').onclick = () => {
+            heartBtn.classList.toggle('active');
+            searchForm.classList.remove('active');
+        }
+
+        window.onscroll = () => {
+            searchForm.classList.remove('active');
+            heartBtn.classList.remove('active');
+
+        }
+    </script>
+</body>
+
+</html>

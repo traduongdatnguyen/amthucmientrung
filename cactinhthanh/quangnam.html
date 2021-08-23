@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+            <div class="ndchinh">
+                <h3 style="margin-left: 22px;">Nội dung chính</h3>
+                <ol type="1">
+                    <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                    <li><a href="#title2">Bánh ít lá gai </a></li>
+                    <li><a href="#title3">Mực ngào Bình Định</a></li>
+                    <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                    <li><a href="#title5">Tré Bình Định</a></li>
+                    <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                    <li><a href="#title7">Nem chợ huyện</a></li>
+                    <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                    <li><a href="#title9">Gỏi cá chích</a></li>
+                </ol>
+            </div>
+    
+            <div class="cactinhthanh">
+                <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+                <div>
+                    <h3>Bắc Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Nam Trung Bộ</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Tây Nguyên</h3>
+                    <ol id="tinhnho">
+                        <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                        <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div> -->
+
+
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 10 đặc sản Quảng Nam ngon nức tiếng không thể bỏ lỡ</h1>
+                </center>
+                <i><span>Để chuyến đi Quảng Nam của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi
+                        đây chính là một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Quảng Nam? Hãy theo chân MT.VN khám phá 10 đặc sản Quảng Nam nổi tiếng
+                        ngon mê ly qua bài viết này nhé!</span></i>
+                <h2 id="title1">1. Mì Quảng Quảng Nam</h2>
+                <p>Sợi mì Quảng được chế biến từ loại gạo ngon nhất đất miền Trung, ngâm khoảng một tiếng cho gạo nở ra
+                    rồi mới đem ra xay nhỏ. Lúc xay thì cho thêm ít dầu đậu phộng với củ nén vô cho thơm. Nước dùng mì
+                    được lấy từ nước luộc tôm và thịt heo.</p>
+                <img src="./quangnam/dac-san-quang-nam-mi-quang.jpg" alt="">
+                <p>Mì Quảng phải ăn nóng mới ngon, vừa ăn vừa thổi vừa húp nước sột soạt mới đúng bài. Tùy khẩu vị mỗi
+                    người mà cho topping lên nhưng nước dùng thì đặc biệt chỉ chan xâm xấp thôi chứ không ngập mì như
+                    các món nước thông thường. Người Quảng Nam thường ăn kèm mì với bánh tráng nước, bẻ nhỏ rồi cho vào
+                    ăn chung. Sợi mì dai ăn cùng bánh tráng thơm thơm bùi bùi rất thú vị.</p>
+                <p>Đến Quảng Nam mà chưa ăn mì Quảng thì không khác gì chưa đến. Món ăn dân dã này đã làm nên nét đặc
+                    trưng ẩm thực có 1 không 2 của mảnh đất miền Trung đậm nghĩa tình.</p>
+                <b><i>Địa chỉ nơi bán mì quảng ngon ở Quảng Nam:</i></b>
+                <ul>
+                    <li>Quán mì Quảng Bà Minh: Cẩm Hà, Hội An, Quảng Nam</li>
+                </ul>
+
+                <h2 id="title2">2. Bữa trưa gọn nhẹ với cơm gà Hội An </h2>
+                <p>Cơm gà là món ăn nổi tiếng luôn nằm trong top 10 món ngon đặc sản Hội An mà du khách nhất định phải
+                    thử. Ở Hội An, cứ 10 bước chân là bạn có thể bắt gặp ngay một quán cơm gà bình dân xinh xắn nhưng
+                    không khi nào ngớt khách ghé thăm.</p>
+                <img src="./quangnam/dac-san-hoi-an-quang-nam-com-ga.jpg" alt="">
+                <p>Cơm ở đây đặc biệt ở chỗ được nấu hoàn toàn bằng bếp củi chứ không phải các loại nồi cơm điện hiện
+                    đại. Tiếp theo đó là gà để làm cơm sẽ là loại gà tơ và nuôi thả vườn nên đảm bảo thịt mềm, vị thơm
+                    ngon và không bị bở. Người Hội An luộc gà rồi xé thịt thành từng miếng nhỏ, ướp chung với hành tây,
+                    rau răm, mắm tỏi ớt rất đậm đà. </p>
+                <p>Cơm gà do nấu bằng nước luộc thịt nên ăn thơm ngọt tự nhiên, ăn không thôi cũng thấy ngon rồi chứ
+                    đừng nói là ăn kèm với gà luộc bóp gia vị. Thịt gà dai chứ không bở, thêm vị nước chấm vừa miệng
+                    khiến cho miếng nào miếng nấy ngon nức lòng người. Các quán gà Hội An thường có thêm đồ ăn kèm là đồ
+                    chua để khách hàng ăn cho đỡ ngán. Chỉ khoảng 30.000 đồng cho một món ăn đặc sản quê hương, rất xứng
+                    đáng để bạn trải nghiệm.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Cơm gà Bà Buội: 22 Phan Chu Trinh, thành phố Hội An, Quảng Nam</li>
+                </ul>
+
+                <h2 id="title3">3. Bánh tráng cuốn thịt heo với mắm chấm độc đáo</h2>
+                <p>Cuốn thịt heo với bánh tráng là món ăn không lạ đối với mọi người. Nhưng món này lại trở thành đặc
+                    sản Quảng Nam do có nước chấm độc đáo. Đó chén mắm nêm tự tay nhà làm, thái vài lát ớt xanh thả lên
+                    trên để tạo vị cay nhẹ. Nhân bánh thì gồm có thịt heo luộc, mì lá, dưa leo, rau sống, chuối chát,
+                    xoài xanh.</p>
+                <img src="./quangnam/dac-san-o-quang-nam-banh-trang-cuon-thit-heo.jpg" alt="">
+                <p>Cuốn bánh tráng thì cuốn phải vừa miệng nhưng chắc tay thì lúc cắn nhân mới không bị rơi ra. Chấm
+                    cuốn ngập trong mắm nêm rồi cắn sâu, nhai kỹ, từ từ thưởng thức hương vị tuyệt vời. Thịt ba chỉ ngọt
+                    béo, giòn mát của các loại rau, chát chát chua chua từ trái,…đủ thứ chua cay mặn ngọt trên đời hòa
+                    quyện vào trong một khoảnh khắc.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Cơm gà Bà Buội: 22 Phan Chu Trinh, thành phố Hội An, Quảng Nam</li>
+                </ul>
+
+                <h2 id="title4">4. Đặc sản Núi Thành Quảng Nam: cá chuồn xanh nướng</h2>
+                <p>Cá chuồn xanh nướng là đặc sản của huyện Núi Thành, tỉnh Quảng Nam. Loài cá thon, dài, lưng xanh,
+                    bụng trắng nõn có thể chế biến thành đủ các món ăn ngon, ăn chơi hết ý. Khi thì nấu lẩu, lúc thì kho
+                    om dưa, hồi lâu lại chiên giòn chấm nước mắm ăn giòn côm cốp</p>
+                <p>Nhưng ngon nhất vẫn là ăn nướng. Cá sơ chế sạch sẽ rồi tẩm ướp gia vị, bỏ trên bếp than hồng nướng
+                    cho đến khi nào màu da chuyển sang vàng rộm, hương thơm lừng bay ngây ngất, vậy là được.</p>
+                <img src="./quangnam/dac-san-nui-thanh-quang-nam-ca-chuon-nuong.jpg" alt="">
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Các quán ăn tại Bãi Rạng: Bãi Rạng, núi Thành, Quảng Nam</li>
+                </ul>
+
+                <h2 id="title5">5. Cháo lươn xanh: món ăn đặc sản Quảng Nam ngày đông </h2>
+                <p>Cháo lươn xanh là món ăn đặc sản Quảng Nam rất hợp cho những ngày đông se lạnh. Người ta chọn lươn
+                    đồng những con to khỏe nhất cho vào hũ đất rồi cho muối vào lắc đều cho sạch rồi rửa lại với nước.
+                    Chặt lươn ra từng khúc bằng đốt tay rồi om chung với mấy thứ gia vị như xả, hành, tiêu, ớt cho dậy
+                    mùi.</p>
+                <img src="./quangnam/dac-san-thang-binh-quang-nam-chao-luon-xanh.jpg" alt="">
+                <p>Cháo nấu loãng rồi cho thêm chút muối. Lúc ăn mới múc cháo nóng hổi từ nồi ra ăn kèm với lươn.</p>
+                <p>Người Quảng Nam thường thưởng thức cháo lươn xanh với rau cải xanh tươi cắt mỏng, vài loại rau thơm,
+                    chanh, ớt và miếng bánh tráng mỏng giòn. Khi ăn thì cho hết các thứ topping cùng với lươn trộn chung
+                    đều với cháo. Vừa ăn vừa thổi thì không có cao lương mỹ vị nào mà sánh bằng.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Làng Bình Định: làng Bình Định, huyện Thăng Bình, tỉnh Quảng Nam</li>
+                </ul>
+
+
+
+                <h2 id="title6">6. Bê thui cầu Mống giòn vỏ mềm thịt </h2>
+                <p>Đặc sản Quảng Nam bê thui ngon nhất là ở Cầu Mống. Cầu Mống vốn là một cây cầu thuộc xã Điện Phương,
+                    huyện Điện Bàn, tỉnh Quảng Nam. Quanh khu vực này người ta chế biến thịt bê theo một cách rất riêng,
+                    lạ lạ, hay hay.</p>
+                <p>Bê được chọn để thui không được quá già cũng không quá non, tầm 25kg đến 35 kg là thịt vừa đủ chắc và
+                    ngọt. Lúc thui thì dùng lửa đều tay, than lúc nào cũng phải đủ nóng, đến khi phần da bê vàng ruộm
+                    thì thịt bên trong cũng vừa chín, vậy là hoàn thành.</p>
+                <img src="./quangnam/dac-san-cau-mong-quang-nam-be-thui.jpg" alt="">
+                <p>Bê thui xong được cắt thành từng lát mỏng vừa ăn và bày ra dĩa. Người Quảng Nam hay ăn kèm bê với
+                    bánh tráng cuốn, mắm nêm, có lúc lại ăn không rồi nhấp môi vài chén rượu. Thịt bê mềm vừa đủ, lớp da
+                    ngoài thơm lừng, giòn tan, thịt ở trong lại mềm, ngọt, ăn hoài không ngán.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Các quán ăn khu vực cầu Mống: cầu Mống, xã Điện Phương, huyện Điện Bàn, tỉnh Quảng Nam</li>
+                </ul>
+
+                <h2 id="title7">7. Gỏi bòn bon Tiên Phước giải nhiệt mùa hè</h2>
+                <p>Quả bòn bon mà lại dùng làm gỏi nghe thật lạ tai. Đây là đặc sản Tiên Phước Quảng Nam rất phù hợp cho
+                    những bữa ăn ngày hè, vừa thanh vừa mát.
+                    Người ta chọn ra những trái bòn bon chín vàng, bóc vỏ tách múi rồi bỏ hạt. Chuẩn bị thêm tôm ram và
+                    thịt ba chỉ cộng với hành tây, rau thơm. Trộn chung các nguyên liệu với nước mắm pha đường, tỏi, ớt
+                    cho ngấm hết giá vị. Cuối cùng là rắc lên một chút đậu phộng rang giã nhuyễn cho thêm phần đẹp mắt.
+                </p>
+                <img src="./quangnam/dac-san-tien-phuoc-quang-nam-goi-bon-bon.jpg" alt="">
+                <p>Bòn bon Tiên Phước có vị ngọt tự nhiên chứ không chua như bòn bon những nơi khác. Thịt bòn bon giòn
+                    giòn, cắn một miếng là nước trái như lan tỏa hết trong khuôn miệng. Kèm với tôm và thịt ba chỉ thấm
+                    đẫm nước chấm vừa ăn, đậu phộng thơm bùi, beo béo,…quả là toàn những hương vị tuyệt vời kết hợp
+                    trong một món ăn dân dã. </p>
+                <p>Những ai đã nếm thử gỏi bòn bon Tiên Phước một lần rồi chắc chắn sẽ còn muốn ăn lần thứ hai. Người
+                    Quảng đã nghiền món này, du khách phương xa lại càng muốn ăn hoài ăn mãi.</p>
+                <b><i>Địa chỉ :</i></b>
+                <ul>
+                    <li>Các quán ăn nhà hàng tại huyện Tiên Phước: : huyện Tiên Phước, tỉnh Quảng Nam</li>
+                </ul>
+
+                <h2 id="title8">8. Đặc sản huyện Quế Sơn: gà Đèo Le và phở sắn</h2>
+                <p>Huyện Quế Sơn – Quảng Nam có hai món ngon đặc sản nổi tiếng là gà đèo Le và phở sắn. Không phải thứ
+                    đồ ăn xa hoa mà chính nét dân dã lại mới là điều thu hút thực khách thưởng thức món ăn này.</p>
+                <p>Gà Đèo Le là giống gà tre, thân hình nhỏ nhắn nhưng rất dẻo dai. Muốn ăn gà đèo Le chuẩn vị thì phải
+                    đến tận nơi ăn mới đã miệng. Người địa phương chế biến gà thành nhiều món ăn khác nhau như nướng,
+                    hấp, rô ti,…nhưng ngon nhất vẫn là để nguyên con rồi luộc lên. Thịt gà chắc, ngọt, mềm, thơm tự
+                    nhiên, ăn kèm với muối tiêu ớt thì ngon khỏi bàn.</p>
+                <img src="./quangnam/dac-san-que-son-quang-nam-ga-deo-le.jpg" alt="">
+                <p>Quế Sơn còn nổi tiếng với phở sắn – loại sợi dài làm từ củ sắn tươi xay thành bột rồi nấu lên vừa dẻo
+                    vừa mịn. Phở sau khi được quệt ra vỉ và phơi khô thì thành hình sợi rất đẹp mắt.</p>
+                <img src="quangnam/dac-san-que-son-quang-nam-pho-san.jpg" alt="">
+                <p>Người Quảng Nam có thể dùng phở sắn để ăn salad, chiên giòn hay dùng với nước lèo như cách ăn phở
+                    bình thường. Dù có ăn cách nào thì phở cũng mang một hương vị rất đặc trưng, dẻo, dai, thơm mùi
+                    hương đồng gió nội.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>Châu Thịnh quán: ĐT608, xã Điện Minh, Điện Bàn, Quảng Nam</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

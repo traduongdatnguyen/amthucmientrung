@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+    <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+    <link rel="stylesheet" href="../cactinhthanh/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#cactinhthanh">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="../index.html#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+            </a>
+            <div class="menu h-xs">
+                <a href="../index.html">
+                    <div class="menu-item active1" id="active1">
+                        Trang chủ
+                    </div>
+                </a>
+                <a href="../gioithieu.html">
+                    <div class="menu-item active2">
+                        Giới thiệu
+                    </div>
+                </a>
+                <a href="../index.html#cactinhthanh">
+                    <div class="menu-item active3">
+                        Các tỉnh thành
+                    </div>
+                </a>
+                <a href="../index.html#testimonial">
+                    <div class="menu-item active4">
+                        Tour du lịch
+                    </div>
+                </a>
+            </div>
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class="bx bx-search" id='search-btn'></i>
+                    <i class='bx bx-book-heart' id='heart-btn'></i>
+                    <a href="../login/"><i class='bx bx-user-circle'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="tìm kiếm...">
+            <label for="search-box" class="bx bx-search"></label>
+        </div>
+
+        <ul id="buyItems" class="heart-items-container">
+            <h2>Mục yêu thích</h2>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quảng Nam</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Đà Nẵng</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+            <li class="heart-items">
+                <span class="fas fa-times"></span>
+                <img src="assets/nghean.jpg" alt="">
+                <div class="content">
+                    <h3 class="productName">Quãng Ngãi</h3>
+                    <a href="">Xem ngay</a>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!-- các tỉnh nhỏ -->
+
+    <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="ndchinh">
+            <h3 style="margin-left: 22px;">Nội dung chính</h3>
+            <ol type="1">
+                <li><a href="#title1">Mắm Nhum Mỹ An</a></li>
+                <li><a href="#title2">Bánh ít lá gai </a></li>
+                <li><a href="#title3">Mực ngào Bình Định</a></li>
+                <li><a href="#title4">Rượu bầu đá Bình Định</a></li>
+                <li><a href="#title5">Tré Bình Định</a></li>
+                <li><a href="#title6">Cua Huỳnh Đế</a></li>
+                <li><a href="#title7">Nem chợ huyện</a></li>
+                <li><a href="#title8">Gié bò Tây Sơn</a></li>
+                <li><a href="#title9">Gỏi cá chích</a></li>
+            </ol>
+        </div>
+
+        <div class="cactinhthanh">
+            <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+            <div>
+                <h3>Bắc Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Nam Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Tây Nguyên</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                </ol>
+            </div>
+        </div>
+    </div> -->
+    <!-- phần nội dung -->
+    <div class="phannoidung">
+        <div class="noidung">
+            <div id="noidung">
+                <center>
+                    <h1>Top 9 đặc sản Hà Tĩnh ngon nức tiếng không thể bỏ lỡ.</h1>
+                </center>
+                <i><span>Để chuyến đi Hà Tĩnh của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi đó
+                        chính là
+                        một trải nghiệm không nên bỏ lỡ.
+                        Vậy, nên ăn gì khi đến Hà Tĩnh? Hãy theo chân MT.VN khám phá 9 đặc sản Hà Tĩnh nổi tiếng ngon mê
+                        ly qua bài
+                        viết này nhé!</span></i>
+                <h2 id="title1">1. Bánh Bèo Hà Tĩnh</h2>
+                <p>Bánh bèo là món ăn dân dã mà bất cứ nơi đâu bạn cũng có thể mua được nhưng ở mỗi vùng đất bánh lại
+                    mang hương
+                    vị và bản sắc riêng của nơi đó. Bánh bèo Hà Tĩnh cũng thế, nó mang một hương sắc riêng mà khi ăn vào
+                    bạn không
+                    thể nhầm lẫn với bánh nơi khác được. Bánh bèo được làm từ bột lọc, nhân trong làm từ tôm non bóc vỏ
+                    hoặc từ
+                    thịt nạc được xào lên cùng với hành khô, sau đó ăn kèm với rau thơm. Khi ăn cho thêm một ít tương
+                    ớt, tạo nên
+                    vị vừa cay, vừa chua ngọt của chanh đường rất hấp dẫn.</p>
+                <img src="./HaTinh/BanhBeo.jpg" alt="">
+                <p>Bánh bèo dù ăn nóng hay nguội đều ngon và hấp dẫn. Khi ăn nóng, kèm nước mắm cay trong những ngày
+                    trời se se
+                    lạnh sẽ thấy ấm lòng. Còn khi ăn nguội, bánh hơi dai, giòn mang vị đậm đà</p>
+
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li>22 Phan Đình Phùng – Thành Phố Hà Tĩnh</li>
+                </ul>
+                <h2 id="title2">2. Bánh Đa Vừng</h2>
+                <p>Du lịch Hà tĩnh nổi tiếng với món ăn dân dã, rẻ tiền nhưng lại rất ngon, khó có thể chối từ đó chính
+                    là món
+                    bánh đa vừng. Ở Hà Tĩnh món bánh đa vừng rất phổ biến, nó được bán ở khắp các chợ, các quán…có hương
+                    vị thơm
+                    giòn đậm đà mang bản sắc của vùng. Bánh đa vừng Hà Tĩnh được làm hoàn toàn bằng gạo, chiếc bánh to,
+                    dày, có
+                    nhiều vừng đen, vừa béo vừa ngậy, khi đói có thể ăn trừ cơm, chỉ thấy no mà không thấy chán.</p>
+                <img src="./HaTinh/BanhDaVung.jpg" alt="">
+                <p>Bánh đa ở Hà Tĩnh được làm hoàn toàn bằng gạo ngon, không pha thêm ngô, sắn như ở nhiều nơi khác.
+                    Thông
+                    thường khi làm bánh đa, người ta chọn loại gạo gié vụ mùa, vừa dẻo, vừa thơm, không dùng gạo xay từ
+                    các vụ lúa
+                    trước, năm trước vì lúa để lâu nên gạo mất chất không còn vị ngọt và thơm như gạo đầu mùa. Ở Hà Tĩnh
+                    người ta
+                    còn ăn bánh tráng xúc nham (gỏi) bắp chuối, hến xào… Đặc sản Hà Tĩnh làm quà mà là món bánh đa dành
+                    tặng gia
+                    đình và bạn bè thì không gì thích hợp hơn.</p>
+
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> bánh đa vừng bán nhiều nhất ở các chợ Hà Tĩnh như chợ Tỉnh, chợ Cầy, chợ Hội…</li>
+                </ul>
+                <h2 id="title3">3. Ram bánh mướt</h2>
+                <p>Ram theo tiếng Hà Tĩnh dùng chỉ món nem rán, là món ăn nổi tiếng, góp phần làm nên hương vị ẩm thực
+                    Việt Nam.
+                    Nhưng ăn ram ở Hà Tĩnh, sẽ cảm nhận một hương vị thật khác mà không có nơi nào có được. Bánh mướt là
+                    cách gọi
+                    khác của bánh cuốn, bánh ướt – món ăn ưa dùng của xứ Nghệ. Bánh mướt đơn giản chỉ cần chấm mắm,
+                    thường ngày là
+                    bánh mướt cuốn chả, sang hơn là canh gà bánh mướt. Người miền Bắc thường cuốn mướt với nhân thịt,
+                    khi tráng
+                    cho nhiều mỡ, nhưng người miền Trung bánh mướt để không nên khi ăn thưởng thức được hương vị mát
+                    lành, thanh
+                    đạm.</p>
+                <img src="./HaTinh/RamBanhUot.jpg" alt="">
+                <p>Ram mướt là thức bánh kết hợp hài hòa của hai loại bánh khác nhau, vừa giản dị vừa tinh tế, ăn vào
+                    giòn mà
+                    dẻo, béo nhưng không ngấy. Tuy cách chế biến khác nhau nhưng cả hai loại bánh cùng được làm từ gạo
+                    nếp, ngon,
+                    trắng, dẻo. Nếp được xay nhuyễn thành bột, trộn muối, đổ nước ấm, nhào cho chắc, mịn. Người làm bánh
+                    khéo léo
+                    phải biết lấy lượng bột vừa đủ, bánh mỏng nhưng dai.</p>
+
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> nhà hàng Thiên Trang – Hà Huy Tập, TP Hà Tĩnh</li>
+                </ul>
+                <h2 id="title4">4. Gỏi cá đục</h2>
+                <p>Nhắc đến những món đặc sản Hà Tĩnh, ta không quên nhắc đến gỏi cá đục – một món ăn gắn liền với miền
+                    biển,
+                    sông nước- một thức quà đặc biệt riêng của vùng biển Xuân Nghi.</p>
+                <img src="./HaTinh/GoiCaDuc.jpg" alt="">
+                <p>Cá đục dài khoảng 13-18 cm, thân to hơn ngón tay cái, sống gần bờ biển, có hình dạng tương tự loài cá
+                    bống
+                    nước ngọt. Cá đục có thể chế biến được rất nhiều món ngon vì thịt chắc, trắng, có vị ngọt và hầu như
+                    mùa nào
+                    cũng có.</p>
+                <p>Ăn gỏi cá đục nhất thiết phải có rau thơm và các loại lá sung, lá đinh lăng, lá xoài non… cùng với
+                    xoài xanh,
+                    khế chua, chuối xanh thái lát mỏng. Khi ăn dùng bánh đa nem cuộn rau với cá, chấm với nước lèo, bạn
+                    sẽ cảm
+                    nhận được vị béo của cá, vị bùi của cùi dừa, vị cay, vị chua lẫn vị thanh thanh, ngọt ngọt rất đặc
+                    biệt mà
+                    không nơi nào có được.</p>
+                <b><i>Địa chỉ:</i></b>
+                <ul>
+                    <li> nhà hàng Đức Thắng (Trần Phú, TP. Hà Tĩnh)</li>
+                </ul>
+
+                <h2 id="title5">5. Hến sông la</h2>
+                <img src="./HaTinh/HenSongLa.jpg" alt="">
+                <p>Hầu như vùng sông nước nào cũng có hến. Và hến cũng là món ăn ưa thích của nhiều gia đình Việt. Hến
+                    có một
+                    hương thơm đặc trưng quyến rũ, bát nước Hến đầu tiên nóng hôi hổi mát, thơm, đậm ngọt, bổ dưỡng, màu
+                    trắng sữa
+                    như nguồn sống vô tận của dòng sông quê mẹ. Đúng như câu ca ai ví “Dẫu ai đi quanh về quắt – không
+                    kẻo nước
+                    giắt Kẻ Thượng” (Giắt là loại Hến con sinh sôi rất nhanh vào mùa hè, thích nghi sống ở vùng nước lợ
+                    như phía
+                    hạ nguồn giáp ranh giữa sông La và sông Lam). Từ hến có thể chế biến ra nhiều món ăn để
+                    thay đổi
+                    hương vị cho bữa cơm thường ngày, như hến xào giá, ăn kèm bánh tráng, canh hến nấu rau
+                    tập tàng,
+                    cơm nước hến thêm chút gừng cay ăn kèm với cà muối mới thật đậm đà làm sao.</p>
+
+                <h2 id="title6">6. Mực nhảy Vũng Áng</h2>
+                <img src="./HaTinh/MucNhay.jpg" alt="">
+                <p>Vùng biển Vũng Áng Hà Tĩnh là một vùng biển đẹp nổi tiếng, là khu kinh tế sầm uất, nổi tiếng với
+                    những loài
+                    hải sản tươi ngon, đặc sản… Ở đây nổi tiếng với mực nhảy vì những con mực ở đây rất to và được chế
+                    biến ngay
+                    sau khi đánh bắt nên người dân ở đây gọi là mực nhảy. Mực nhảy có thể được chế biến thành nhiều món
+                    ăn khác
+                    như luộc, xào, hấp hay gỏi. Mực nhảy có vị tươi, ngon, thơm rất đặc trưng, khác hoàn toàn so với các
+                    loại mực
+                    ở vùng biển khác trên cả nước.</p>
+
+                <h2 id="title7">7. Bún bò Đức Thọ</h2>
+                <img src="./HaTinh/BunBo.jpg" alt="">
+                <p>Bún bò là món ăn truyền thống quen thuộc của người Việt nhưng bún bò Đức Thọ mang nét đặc trưng riêng
+                    nhờ sự
+                    khác biệt trong lựa chọn nguyên liệu và chế biến. Không như các loại bún trên thị trường được chế
+                    biến qua máy
+                    móc hiện đại, bún ở Đức Thọ được làm thủ công bằng tay nên sợi bún to tròn và có màu hoa cau vì
+                    không qua công
+                    đoạn xử lý làm trắng màu bún. Loại bún này phải được làm từ gạo quê Đức Thọ, thịt bò cũng là thịt
+                    tươi, mềm từ
+                    những chú bò được chăn thả ven đê làng quê Đức Thọ. Mặc dù hình thức của món ăn không đẹp như nhiều
+                    loại bún
+                    khác nhưng bún bò Đức Thọ vẫn chinh phục trái tim thực khách bởi hương vị dẻo thơm mộc mạc.</p>
+                <h2 id="title8">8. Bún thịt nướng</h2>
+                <img src="./HaTinh/BunThitNuong.png" alt="">
+                <p>Đến thăm Hà Tĩnh, bạn đừng quên ghé qua bất cứ quán ăn ven đường nào để thưởng thức món bún chả Hà
+                    Tĩnh. Bún
+                    thịt nướng tuy không mới nhưng người dân địa phương thổi hồn vào món ăn này hương vị đồng quê chân
+                    chất với sự
+                    khác biệt ở nước chấm: nước tương. Gia vị ăn kèm bún thịt nướng Hà Tĩnh không phải nước mắm, nước
+                    xương như
+                    người miền Bắc mà là nước tương – thường được người dân gọi là chẹo. Chẹo chế biến từ nước tương,
+                    trộn với lạc
+                    rang giã nhỏ kết hợp với ớt tỏi đường, tạo nên mùi vị chua cay mặn ngọt làm đậm đà thêm vị thịt và
+                    nét thanh
+                    mát của bún.</p>
+                <p>Suất bún chả một người ăn có giá rất phải chăng, khoảng 30.000 đồng. Các quán bún thịt nướng thị xã
+                    Hồng
+                    Lĩnh, Hà Tĩnh tập trung nhiều ở phố Trần Phú, Phan Anh, Nguyễn Ái Quốc… và bán cả ngày nên du khách
+                    có thể
+                    thoải mái lựa chọn thời điểm đi ăn</p>
+                <h2 id="title9">9. Cháo Canh</h2>
+                <img src="./HaTinh/ChaoCanh.jpg" alt="">
+                <p>Nhìn vẻ bề ngoài cháo canh có vẻ giống mỳ vằn thắn hoặc bún nhưng những du khách đã đến Hà Tĩnh và
+                    nếm thử
+                    món ăn này sẽ bị ấn tượng bởi hương vị ngọt ngọt, chua chua, cay cay của nó. Nguyên liệu chính làm
+                    nên món ăn
+                    đặc biệt là bột mỳ. Bột được cán thành sợi như bún rồi chan với nước dùng từ xương lợn ninh nhừ, ăn
+                    kèm giò
+                    chả, thịt lợn, chút thịt bò và lá mùi tàu thái sợi, tạo nên món ăn vô cùng độc đáo.</p>
+                <p>Bạn có thể góp ý qua đường link bên dưới. Cảm ơn.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- start pooter  -->
+    <section class="footer bg-img"
+        style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-xs-12">
+                    <h1>
+                        Ẩm thực miền trung
+                    </h1>
+                    <br>
+                    <p>Email: amthucmientrung.vn@gmail.com</p>
+                    <p>Phone: +866-171-367</p>
+                    <p>Website: amthucmientrung.com.vn</p>
+                </div>
+                <div class="col-2 col-xs-12" id="thongtin">
+                    <h1>
+                        Thông Tin
+                    </h1>
+                    <br>
+                    <p>
+                        <a href="#">
+                            Đầu trang
+                        </a>
+                    </p>
+                    <p>
+                        <a href="../index.php#cactinhthanh">
+                            Các tỉnh thành
+                        </a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" href="../gioithieu.php">
+                            Giới thiệu
+                        </a>
+                    </p>
+                </div>
+                <div class="col-4 col-xs-12">
+                    <h1 style="font-size: 15px;">
+                        Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+                    </h1>
+                    <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+                        chính sách bảo mật của chúng tôi.</small>
+                    <div class="input-group">
+                        <input type="text" placeholder="Nhập email">
+                        <button>
+                            Đăng Ký
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>

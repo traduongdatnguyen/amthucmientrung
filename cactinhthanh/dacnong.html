@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../foodvietnam/assets/vietnam.jpg">
+  <link rel="stylesheet" href="../../foodvietnam/assets/css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../cactinhthanh/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>ẨM THỰC MIỀN TRUNG</title>
+</head>
+
+
+<body>
+  <a href="#home" class="back-to-top">
+    <i class="bx bxs-to-top"></i>
+</a>
+<div class="mb-nav">
+    <div class="mb-move-item"></div>
+    <div class="mb-nav-item active">
+        <a href="#home">
+            <i class="bx bxs-home"></i>
+        </a>
+    </div>
+    <div class="mb-nav-item">
+        <a href="../index.html">
+            <i class='bx bxs-wink-smile'></i>
+        </a>
+    </div>
+    <div class="mb-nav-item">
+        <a href="../index.html#cactinhthanh">
+            <i class='bx bxs-food-menu'></i>
+        </a>
+    </div>
+    <div class="mb-nav-item">
+        <a href="../index.html#testimonial">
+            <i class='bx bxs-comment-detail'></i>
+        </a>
+    </div>
+</div>
+
+<div class="nav">
+    <div class="menu-wrap">
+        <a href="../index.html"></a>
+            <div class="logo">
+                ẨM THỰC MIỀN TRUNG
+            </div>
+        </a>
+        <div class="menu h-xs">
+            <a href="../index.html">
+                <div class="menu-item active1" id="active1">
+                    Trang chủ
+                </div>
+            </a>
+            <a href="../gioithieu.html">
+                <div class="menu-item active2">
+                    Giới thiệu
+                </div>
+            </a>
+            <a href="../index.html#cactinhthanh">
+                <div class="menu-item active3">
+                    Các tỉnh thành
+                </div>
+            </a>
+            <a href="../index.html#testimonial">
+                <div class="menu-item active4">
+                    Tour du lịch
+                </div>
+            </a>
+        </div>
+        <div class="right-menu">
+            <div class="cart-btn">
+                <i class="bx bx-search" id='search-btn'></i>
+                <i class='bx bx-book-heart' id='heart-btn'></i>
+                <a href="../login/"><i class='bx bx-user-circle'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="tìm kiếm...">
+        <label for="search-box" class="bx bx-search"></label>
+    </div>
+
+    <ul id="buyItems" class="heart-items-container">
+        <h2>Mục yêu thích</h2>
+        <li class="heart-items">
+            <span class="fas fa-times"></span>
+            <img src="assets/nghean.jpg" alt="">
+            <div class="content">
+                <h3 class="productName">Quảng Nam</h3>
+                <a href="">Xem ngay</a>
+            </div>
+        </li>
+        <li class="heart-items">
+            <span class="fas fa-times"></span>
+            <img src="assets/nghean.jpg" alt="">
+            <div class="content">
+                <h3 class="productName">Đà Nẵng</h3>
+                <a href="">Xem ngay</a>
+            </div>
+        </li>
+        <li class="heart-items">
+            <span class="fas fa-times"></span>
+            <img src="assets/nghean.jpg" alt="">
+            <div class="content">
+                <h3 class="productName">Quãng Ngãi</h3>
+                <a href="">Xem ngay</a>
+            </div>
+        </li>
+
+    </ul>
+</div>
+  <!-- các tỉnh nhỏ -->
+
+  <!-- <div class="banner" style="background-image: url(../assets/nordwood-themes-pYWrdKO5ksI-unsplash.jpg);">
+        <div class="ndchinh">
+            <h3 style="margin-left: 22px;">Nội dung chính</h3>
+            <ol type="1">
+                <li><a href="#title1">1. Gà nướng Bản Đôn</a></li>
+                <li><a href="#title2">2. Cá bống thác kho riềng</a></li>
+                <li><a href="#title3">3. Thịt nai</a></li>
+                <li><a href="#title4">4. Lẩu cá lăng</a></li>
+
+            </ol>
+        </div>
+
+        <div class="cactinhthanh">
+            <h3><strong>DANH SÁCH CÁC TỈNH</strong></h3>
+            <div>
+                <h3>Bắc Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/thanhhoa.php">Thanh Hóa</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/nghean.php">Nghệ An</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/hatinh.php">Hà Tĩnh</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangtri.php">Quảng Trị</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/TTHue.php">Thừa Thiên Huế</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Nam Trung Bộ</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/danang.php">Đà Nẵng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangnam.php">Quảng Nam</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/quangngai.php">Quảng Ngãi</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/binhdinh.php">Bình Định</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/phuyen.php">Phú Yên</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Tây Nguyên</h3>
+                <ol id="tinhnho">
+                    <li><a href="../../foodvietnam/cactinhthanh/kontum.php">Kon Tum</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/gialai.php">Gia Lai</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/dacnong.php">Đắc Nông</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/lamdong.php">Lâm Đồng</a></li>
+                    <li><a href="../../foodvietnam/cactinhthanh/daklak.php">Đắc Lắc</a></li>
+                </ol>
+            </div>
+        </div>
+    </div> -->
+  <!-- phần nội dung -->
+  <div class="phannoidung">
+    <div class="noidung">
+      <div id="noidung">
+        <h1>Top 4 đặc sản Đắc Lắc ngon nức tiếng không thể bỏ lỡ</h1>
+        <i><span>Để chuyến đi Đắc Lắc của bạn trở nên trọn vẹn và thú vị hơn, thì việc khám phá ẩm thực nơi đây chính
+            là một trải nghiệm không nên bỏ lỡ.
+            Vậy, nên ăn gì khi đến Đắc Lắc? Hãy theo chân MT.VN khám phá 4 đặc sản Đắc Lắc nổi tiếng ngon mê ly qua
+            bài viết này nhé!</span></i>
+        <h2 id="title1">1. Gà nướng Bản Đôn</h2>
+        <img src="./Daklak/GaNuong.jpg" alt="">
+        <p>Để có những con gà nướng ngon, hợp lòng du khách, người dân Bản Đôn phải rất công phu nuôi chọn gà và có
+          cách làm món riêng. Trước hết, giống gà phải là gà thả vườn chính hiệu. Đất ở Bản Đôn rộng, vườn thưa, gà
+          nuôi ở đây được thả rông tự do, thức ăn chính của chúng là cỏ non, côn trùng và lúa rẫy. Gà được chọn nướng
+          là loại mới lớn, độ chừng hơn một kg mỗi con. Sau khi làm xong, gà để nguyên con, có thể dần cho con gà bẹp
+          lại rồi ướp muối ớt, nước sả và thêm ít mật ong rừng. Để ăn gà nướng ở Bản Đôn “đúng bài”, du khách phải
+          chấm thịt gà với muối ớt hoặc muối sả.</p>
+
+        <h2 id="title2">2. Cá bống thác kho riềng</h2>
+        <img src="./Daklak/CaBong.jpg" alt="">
+        <p>Món cá bống thác kho riềng là một món ăn có tính truyền thống của những đồng bào dân tộc tại Đắk Lắk. Cá
+          bống Tây Nguyên sống ngay trong dòng thác đổ. Loại cá này chỉ thích nghi với môi trường nước đổ từ cao
+          xuống, mình bé và trắng, thân tròn săn chắc như ngón tay. Cá còn tươi nhảy lao xao được xả cho sạch nhớt
+          trên mình, và bỏ vào ít muối ướp cho cứng lại, sau đó lấy riềng rửa sạch giã nhỏ. Người ta bắc chảo cho
+          nóng, và cho vào đó ít dầu ăn, hay mỡ đun cho sôi lên, cho cá vào chiên vàng, đổ riềng đã chuẩn bị sẵn. Mùi
+          riềng, mùi cá bốc lên thơm ngào ngạt, đợi riềng và cá quyện vào nhau, lúc này họ mới cho mắm muối và các gia
+          vị: hành, tiêu, ớt, đường và bột ngọt tạo độ vừa ăn. Du lịch Đắk Lắk mà quên thưởng thức món cá bống thác
+          kho riềng quả là một thiếu sót lớn đối với du khách.</p>
+
+        <h2 id="title3">3. Thịt nai</h2>
+        <img src="./Daklak/ThitNai.jpg" alt="">
+        <p>Thịt nai là món đặc sản chủ yếu của vùng rừng núi Tây Nguyên, đặc biệt là ở Đắk Lắk. Thịt nai tươi khác
+          thịt bò ở chỗ ít gân, mỡ màu trắng ngà, mềm hơn cả thịt bê non. Thịt nai có thể chế biến thành nhiều món:
+          nai nướng, nai xào lăn, nai nhúng giấm, nai lúc lắc, sườn nai rán, cháo bao tử và sau cùng là nai khô hợp
+          lại đủ 7 món như thịt bò. Nhưng nai nướng, nai nhúng giấm và nai khô lại là những món tiêu biểu nhất.</p>
+
+        <h2 id="title4">4. Lẩu cá lăng</h2>
+        <img src="./Daklak/LauCaLang.jpg" alt="">
+        <p>Dòng Sêrêpôk hoang dã, bí ẩn và mãnh liệt đã được thiên nhiên ban tặng cho một loại cá quý đó là cá lăng
+          rắn chắc, thịt thơm và là món ngon nổi tiếng. Cá Lăng có thể chế biến thành nhiều món, tuy nhiên ấn tượng
+          nhất vẫn là món lẩu cá lăng với hương vị độc đáo mang đậm chất Tây Nguyên. Đây là món ăn ngon miệng và có
+          tác dụng giải nhiệt rất tốt trong những ngày nắng.</p>
+
+
+      </div>
+    </div>
+  </div>
+  <section class="footer bg-img"
+    style="background-image: url(../../foodvietnam/assets/brooke-lark-08bOYnH_r_E-unsplash.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-xs-12">
+          <h1>
+            Ẩm thực miền trung
+          </h1>
+          <br>
+          <p>Email: amthucmientrung.vn@gmail.com</p>
+          <p>Phone: +866-171-367</p>
+          <p>Website: amthucmientrung.com.vn</p>
+        </div>
+        <div class="col-2 col-xs-12" id="thongtin">
+          <h1>
+            Thông Tin
+          </h1>
+          <br>
+          <p>
+            <a href="#">
+              Đầu trang
+            </a>
+          </p>
+          <p>
+            <a href="../index.php#cactinhthanh">
+              Các tỉnh thành
+            </a>
+          </p>
+          <p>
+            <a target="_blank" rel="noopener" href="../gioithieu.php">
+              Giới thiệu
+            </a>
+          </p>
+        </div>
+        <div class="col-4 col-xs-12">
+          <h1 style="font-size: 15px;">
+            Các deal du lịch giảm giá đến 60% sẽ được gửi đến inbox của bạn
+          </h1>
+          <small style="font-size: 12px;">Khi nhấp vào Đăng ký, bạn đồng ý với các Điều Khoản và Điều Kiện và
+            chính sách bảo mật của chúng tôi.</small>
+          <div class="input-group">
+            <input type="text" placeholder="Nhập email">
+            <button>
+              Đăng Ký
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    //search
+
+    let searchForm = document.querySelector('.search-form');
+    document.querySelector('#search-btn').onclick = () => {
+      searchForm.classList.toggle('active');
+      heartBtn.classList.remove('active');
+    }
+    let heartBtn = document.querySelector('.heart-items-container');
+    document.querySelector('#heart-btn').onclick = () => {
+      heartBtn.classList.toggle('active');
+      searchForm.classList.remove('active');
+    }
+
+    window.onscroll = () => {
+      searchForm.classList.remove('active');
+      heartBtn.classList.remove('active');
+
+    }
+  </script>
+</body>
+
+</html>
