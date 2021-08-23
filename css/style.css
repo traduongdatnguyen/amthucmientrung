@@ -63,7 +63,6 @@ html::-webkit-scrollbar-thumb{
 
 .logo {
     font-size: 2rem;
-    margin-left: 1rem;
     font-weight: 800;
     color: var(--primary-color);
 }
@@ -225,10 +224,8 @@ h1.zero::before{
     background: var(--background-color);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     border-radius: 2rem;
-    margin-top:-10%;
+    margin-top:-10%
 }
-
-
 
 section {
     padding: 9rem 0;
@@ -236,13 +233,13 @@ section {
 
 .slogan {
     text-align: justify;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
     
 
 .slogan h1 {
     font-size: 2.5rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
     color: var(--primary-color);
 }
 
@@ -688,6 +685,7 @@ h3#it_me{
     }
     .logo{
         font-size: 1.5rem;
+        margin-left: 0px;
     }
     span {
         font-size: inherit;
@@ -701,7 +699,13 @@ h3#it_me{
         background-image: url(assets/dan-gold-4_jhDO54BYg-unsplash.jpg);
         background-attachment: fixed;
     }
-
+    .slogan{
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .slogan h1{
+        text-align: center;
+    }
     .about-slogan.start {
         transform: translateX(0) !important;
     }
