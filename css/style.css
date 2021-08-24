@@ -465,7 +465,7 @@ section {
 .footer {
     color: var(--grey);
     font-weight: 400;
-    height: 60vh;
+    height: 80vh;
 }
 
 .footer h1 {
